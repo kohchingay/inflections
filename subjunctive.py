@@ -69,9 +69,14 @@ perfect_active = [
     ["2nd", "λελύκῃς", "λελύκητε"],
     ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
 ]
-perfect_mp = [
+perfect_middle = [
     ["1st", "λελύκωμαι", "λελυκώμεθα"],
     ["2nd", "λελύκῃ", "λελύκησθε"],
     ["3rd", "λελύκηται", "λελυκῶνται"]
 ]
-show_two("Perfect Subjunctive Active", perfect_active, "Perfect Subjunctive Middle/Passive", perfect_mp)
+perfect_passive = [
+    ["1st", "λελυθῶ", "λελυθῶμεν"],
+    ["2nd", "λελυθῇς", "λελυθῆτε"],
+    ["3rd", "λελυθῇ", "λελυθῶσι(ν)"]
+]
+show_three("Perfect Subjunctive Active", perfect_active, "Perfect Subjunctive Middle", perfect_middle, "Perfect Subjunctive Passive", perfect_passive)
