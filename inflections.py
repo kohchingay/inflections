@@ -50,7 +50,7 @@ def show_three(title1, data1, title2, data2, title3, data3):
 # Present Indicative
 present_active = [["1st", "λύω", "λύομεν"], ["2nd", "λύεις", "λύετε"], ["3rd", "λύει", "λύουσι(ν)"]]
 present_mp = [["1st", "λύομαι", "λυόμεθα"], ["2nd", "λύῃ", "λύεσθε"], ["3rd", "λύεται", "λύονται"]]
-show_two("Present Indicative Active", present_active, "Present Indicative Middle/Passive", present_mp)
+show_two("Pres. Ind. Act.", present_active, "Present Indicative Middle/Passive", present_mp)
 
 # Imperfect Indicative
 imperfect_active = [["1st", "ἔλυον", "ἐλύομεν"], ["2nd", "ἔλυες", "ἐλύετε"], ["3rd", "ἔλυε(ν)", "ἔλυον"]]
