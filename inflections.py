@@ -36,7 +36,7 @@ def show_two(title1, data1, title2, data2):
         st.table(pd.DataFrame(data2, columns=["Person", "Singular", "Plural"]))
 
 def show_three(title1, data1, title2, data2, title3, data3):
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
         st.markdown(f"### {title1}")
         st.table(pd.DataFrame(data1, columns=["Person", "Singular", "Plural"]))
