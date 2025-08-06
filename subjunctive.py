@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Conjugation of λύω")
+st.title("Subjunctive of λύω")
 st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper to show two tables side by side
