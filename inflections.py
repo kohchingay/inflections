@@ -50,18 +50,18 @@ def show_three(title1, data1, title2, data2, title3, data3):
 # Present Indicative
 present_active = [["1st", "λύω", "λύομεν"], ["2nd", "λύεις", "λύετε"], ["3rd", "λύει", "λύουσι(ν)"]]
 present_mp = [["1st", "λύομαι", "λυόμεθα"], ["2nd", "λύῃ", "λύεσθε"], ["3rd", "λύεται", "λύονται"]]
-show_two("Pres. Ind. Act.", present_active, "Present Indicative Middle/Passive", present_mp)
+show_two("Pres. Ind. Act.", present_active, "Pres. Ind. Mid./Pass.", present_mp)
 
 # Imperfect Indicative
 imperfect_active = [["1st", "ἔλυον", "ἐλύομεν"], ["2nd", "ἔλυες", "ἐλύετε"], ["3rd", "ἔλυε(ν)", "ἔλυον"]]
 imperfect_mp = [["1st", "ἐλυόμην", "ἐλυόμεθα"], ["2nd", "ἐλύου", "ἐλύεσθε"], ["3rd", "ἐλύετο", "ἐλύοντο"]]
-show_two("Imperfect Indicative Active", imperfect_active, "Imperfect Indicative Middle/Passive", imperfect_mp)
+show_two("Imp. Ind. Act.", imperfect_active, "Imp. Ind. Mid./Pass.", imperfect_mp)
 
 # Future Indicative
 future_active = [["1st", "λύσω", "λύσομεν"], ["2nd", "λύσεις", "λύσετε"], ["3rd", "λύσει", "λύσουσι(ν)"]]
 future_middle = [["1st", "λύσομαι", "λυσόμεθα"], ["2nd", "λύσῃ", "λύσεσθε"], ["3rd", "λύσεται", "λύσονται"]]
 future_passive = [["1st", "λυθήσομαι", "λυθησόμεθα"], ["2nd", "λυθήσῃ", "λυθήσεσθε"], ["3rd", "λυθήσεται", "λυθήσονται"]]
-show_three("Future Indicative Active", future_active, "Future Indicative Middle", future_middle, "Future Indicative Passive", future_passive)
+show_three("Fut. Ind. Act.", future_active, "Fut. Ind. Mid.", future_middle, "Fut. Ind. Pass.", future_passive)
 
 # 1st Aorist Indicative
 aorist1_active = [["1st", "ἔλυσα", "ἐλύσαμεν"], ["2nd", "ἔλυσας", "ἐλύσατε"], ["3rd", "ἔλυσε(ν)", "ἔλυσαν"]]
