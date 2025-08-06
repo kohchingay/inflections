@@ -2,59 +2,150 @@ import streamlit as st
 import pandas as pd
 
 st.title("Conjugation of λύω")
-st.write("Grouped by tense and voice, with duplicate forms removed for clarity.")
+st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper to show two tables side by side
-def show_side_by_side(title_left, data_left, title_right, data_right):
+def show_two(title1, data1, title2, data2):
     col1, col2 = st.columns(2)
     with col1:
-        st.subheader(title_left)
-        df_left = pd.DataFrame(data_left, columns=["Person", "Singular", "Plural"])
-        st.table(df_left)
+        st.subheader(title1)
+        df1 = pd.DataFrame(data1, columns=["Person", "Singular", "Plural"])
+        st.table(df1)
     with col2:
-        st.subheader(title_right)
-        df_right = pd.DataFrame(data_right, columns=["Person", "Singular", "Plural"])
-        st.table(df_right)
+        st.subheader(title2)
+        df2 = pd.DataFrame(data2, columns=["Person", "Singular", "Plural"])
+        st.table(df2)
 
-# Present & Imperfect Indicative Active (grouped)
-indicative_active = [
-    ["1st", "λύω / ἔλυον", "λύομεν / ἐλύομεν"],
-    ["2nd", "λύεις / ἔλυες", "λύετε / ἐλύετε"],
-    ["3rd", "λύει / ἔλυε(ν)", "λύουσι(ν) / ἔλυον"]
+# Helper to show three tables side by side
+def show_three(title1, data1, title2, data2, title3, data3):
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.subheader(title1)
+        df1 = pd.DataFrame(data1, columns=["Person", "Singular", "Plural"])
+        st.table(df1)
+    with col2:
+        st.subheader(title2)
+        df2 = pd.DataFrame(data2, columns=["Person", "Singular", "Plural"])
+        st.table(df2)
+    with col3:
+        st.subheader(title3)
+        df3 = pd.DataFrame(data3, columns=["Person", "Singular", "Plural"])
+        st.table(df3)
+
+# Present Indicative
+present_active = [
+    ["1st", "λύω", "λύομεν"],
+    ["2nd", "λύεις", "λύετε"],
+    ["3rd", "λύει", "λύουσι(ν)"]
 ]
-
-# Present & Imperfect Indicative Middle/Passive (grouped)
-indicative_mp = [
-    ["1st", "λύομαι / ἐλυόμην", "λυόμεθα / ἐλυόμεθα"],
-    ["2nd", "λύῃ / ἐλύου", "λύεσθε / ἐλύεσθε"],
-    ["3rd", "λύεται / ἐλύετο", "λύονται / ἐλύοντο"]
+present_mp = [
+    ["1st", "λύομαι", "λυόμεθα"],
+    ["2nd", "λύῃ", "λύεσθε"],
+    ["3rd", "λύεται", "λύονται"]
 ]
+show_two("Present Indicative Active", present_active, "Present Indicative Middle/Passive", present_mp)
 
-show_side_by_side("Present & Imperfect Indicative Active", indicative_active,
-                  "Present & Imperfect Indicative Middle/Passive", indicative_mp)
+# Imperfect Indicative
+imperfect_active = [
+    ["1st", "ἔλυον", "ἐλύομεν"],
+    ["2nd", "ἔλυες", "ἐλύετε"],
+    ["3rd", "ἔλυε(ν)", "ἔλυον"]
+]
+imperfect_mp = [
+    ["1st", "ἐλυόμην", "ἐλυόμεθα"],
+    ["2nd", "ἐλύου", "ἐλύεσθε"],
+    ["3rd", "ἐλύετο", "ἐλύοντο"]
+]
+show_two("Imperfect Indicative Active", imperfect_active, "Imperfect Indicative Middle/Passive", imperfect_mp)
 
-# Future Indicative Active
+# Future Indicative
 future_active = [
     ["1st", "λύσω", "λύσομεν"],
     ["2nd", "λύσεις", "λύσετε"],
     ["3rd", "λύσει", "λύσουσι(ν)"]
 ]
-
-# Future Indicative Middle
 future_middle = [
     ["1st", "λύσομαι", "λυσόμεθα"],
     ["2nd", "λύσῃ", "λύσεσθε"],
     ["3rd", "λύσεται", "λύσονται"]
 ]
-
-# Future Indicative Passive
 future_passive = [
     ["1st", "λυθήσομαι", "λυθησόμεθα"],
     ["2nd", "λυθήσῃ", "λυθήσεσθε"],
     ["3rd", "λυθήσεται", "λυθήσονται"]
 ]
+show_three("Future Indicative Active", future_active,
+           "Future Indicative Middle", future_middle,
+           "Future Indicative Passive", future_passive)
 
-show_side_by_side("Future Indicative Active", future_active,
-                  "Future Indicative Middle", future_middle)
+# 1st Aorist Indicative
+aorist1_active = [
+    ["1st", "ἔλυσα", "ἐλύσαμεν"],
+    ["2nd", "ἔλυσας", "ἐλύσατε"],
+    ["3rd", "ἔλυσε(ν)", "ἔλυσαν"]
+]
+aorist1_middle = [
+    ["1st", "ἐλυσάμην", "ἐλυσάμεθα"],
+    ["2nd", "ἐλύσω", "ἐλύσασθε"],
+    ["3rd", "ἐλύσατο", "ἐλύσαντο"]
+]
+aorist1_passive = [
+    ["1st", "ἐλύθην", "ἐλύθημεν"],
+    ["2nd", "ἐλύθης", "ἐλύθητε"],
+    ["3rd", "ἐλύθη", "ἐλύθησαν"]
+]
+show_three("1st Aorist Indicative Active", aorist1_active,
+           "1st Aorist Indicative Middle", aorist1_middle,
+           "1st Aorist Indicative Passive", aorist1_passive)
 
-show_side_by_side("Future Indicative Passive", future_passive, "", [])
+# 2nd Aorist Indicative
+aorist2_active = [
+    ["1st", "ἔλαβον", "ἐλάβομεν"],
+    ["2nd", "ἔλαβες", "ἐλάβετε"],
+    ["3rd", "ἔλαβε(ν)", "ἔλαβον"]
+]
+aorist2_middle = [
+    ["1st", "ἐλαβόμην", "ἐλαβόμεθα"],
+    ["2nd", "ἐλάβου", "ἐλάβεσθε"],
+    ["3rd", "ἐλάβετο", "ἐλάβοντο"]
+]
+aorist2_passive = [
+    ["1st", "ἐλήμφθην", "ἐλήμφθημεν"],
+    ["2nd", "ἐλήμφθης", "ἐλήμφθητε"],
+    ["3rd", "ἐλήμφθη", "ἐλήμφθησαν"]
+]
+show_three("2nd Aorist Indicative Active", aorist2_active,
+           "2nd Aorist Indicative Middle", aorist2_middle,
+           "2nd Aorist Indicative Passive", aorist2_passive)
+
+# Perfect Indicative
+perfect_active = [
+    ["1st", "λέλυκα", "λελύκαμεν"],
+    ["2nd", "λέλυκας", "λελύκατε"],
+    ["3rd", "λέλυκε(ν)", "λελύκασι(ν)"]
+]
+perfect_middle = [
+    ["1st", "λέλυμαι", "λελύμεθα"],
+    ["2nd", "λέλυσαι", "λέλυσθε"],
+    ["3rd", "λέλυται", "λέλυνται"]
+]
+perfect_passive = perfect_middle  # Same forms
+show_three("Perfect Indicative Active", perfect_active,
+           "Perfect Indicative Middle", perfect_middle,
+           "Perfect Indicative Passive", perfect_passive)
+
+# Pluperfect Indicative
+pluperfect_active = [
+    ["1st", "ἐλελύκη", "ἐλελύκεμεν"],
+    ["2nd", "ἐλελύκης", "ἐλελύκετε"],
+    ["3rd", "ἐλελύκει", "ἐλελύκεσαν"]
+]
+pluperfect_middle = [
+    ["1st", "ἐλελύμην", "ἐλελύμεθα"],
+    ["2nd", "ἐλέλυσο", "ἐλέλυσθε"],
+    ["3rd", "ἐλέλυτο", "ἐλέλυντο"]
+]
+pluperfect_passive = pluperfect_middle  # Same forms
+show_three("Pluperfect Indicative Active", pluperfect_active,
+           "Pluperfect Indicative Middle", pluperfect_middle,
+           "Pluperfect Indicative Passive", pluperfect_passive)
