@@ -85,4 +85,4 @@ show_three("Perfect Indicative Active", perfect_active, "Perfect Indicative Midd
 pluperfect_active = [["1st", "ἐλελύκη", "ἐλελύκεμεν"], ["2nd", "ἐλελύκης", "ἐλελύκετε"], ["3rd", "ἐλελύκει", "ἐλελύκεσαν"]]
 pluperfect_middle = [["1st", "ἐλελύμην", "ἐλελύμεθα"], ["2nd", "ἐλέλυσο", "ἐλέλυσθε"], ["3rd", "ἐλέλυτο", "ἐλέλυντο"]]
 pluperfect_passive = pluperfect_middle
-show_three("Pluperfect Indicative Active", pluperfect_active, "Pluperfect Indicative Middle", pluperfect_middle, "Pluperfect Indicative Passive", 
+show_three("Pluperfect Indicative Active", pluperfect_active, "Pluperfect Indicative Middle", pluperfect_middle, "Pluperfect Indicative Passive", pluperfect_passive)
