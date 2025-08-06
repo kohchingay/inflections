@@ -5,7 +5,10 @@ import pandas as pd
 st.markdown("""
     <style>
         .block-container {
-            padding: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
         table {
             width: 100%;
