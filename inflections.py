@@ -26,7 +26,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("Conjugation of λύω")
+st.title("Indicative of λύω")
 st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper functions
