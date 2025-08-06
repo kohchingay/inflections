@@ -6,8 +6,8 @@ st.markdown("""
     <style>
         .block-container {
             max-width: unset;
-            padding-left: 5rem;
-            padding-right: 5rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
