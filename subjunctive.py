@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Subjunctive of λύω")
+st.title("Conjugation of λύω")
 st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper to show two tables side by side
@@ -51,12 +51,17 @@ aorist_active = [
     ["2nd", "λύσῃς", "λύσητε"],
     ["3rd", "λύσῃ", "λύσωσι(ν)"]
 ]
-aorist_mp = [
+aorist_middle = [
     ["1st", "λύσωμαι", "λυσώμεθα"],
     ["2nd", "λύσῃ", "λύσησθε"],
     ["3rd", "λύσηται", "λύσωνται"]
 ]
-show_two("Aorist Subjunctive Active", aorist_active, "Aorist Subjunctive Middle/Passive", aorist_mp)
+aorist_passive = [
+    ["1st", "λυθῶ", "λυθῶμεν"],
+    ["2nd", "λυθῇς", "λυθῆτε"],
+    ["3rd", "λυθῇ", "λυθῶσι(ν)"]
+]
+show_three("Aorist Subjunctive Active", aorist_active, "Aorist Subjunctive Middle", aorist_middle, "Aorist Subjunctive Passive", aorist_passive)
 
 # Perfect Subjunctive
 perfect_active = [
