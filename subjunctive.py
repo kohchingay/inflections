@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-st.title("Conjugation of λύω")
+st.title("Subjunctive of λύω")
 st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper to show two tables side by side
@@ -45,7 +45,7 @@ present_mp = [
     ["2nd", "λύῃ", "λύησθε"],
     ["3rd", "λύηται", "λύωνται"]
 ]
-show_two("Present Subjunctive Active", present_active, "Present Subjunctive Middle/Passive", present_mp)
+show_two("Pres. Act. Subj.", present_active, "Pres. Mid./Pass. Subj.", present_mp)
 
 # Aorist Subjunctive
 aorist_active = [
@@ -63,7 +63,7 @@ aorist_passive = [
     ["2nd", "λυθῇς", "λυθῆτε"],
     ["3rd", "λυθῇ", "λυθῶσι(ν)"]
 ]
-show_three("Aorist Subjunctive Active", aorist_active, "Aorist Subjunctive Middle", aorist_middle, "Aorist Subjunctive Passive", aorist_passive)
+show_three("Aor. Act. Subj.", aorist_active, "Aor. Mid. Subj.", aorist_middle, "Aor. Pass. Subj.", aorist_passive)
 
 # Perfect Subjunctive
 perfect_active = [
@@ -81,4 +81,4 @@ perfect_passive = [
     ["2nd", "λελυθῇς", "λελυθῆτε"],
     ["3rd", "λελυθῇ", "λελυθῶσι(ν)"]
 ]
-show_three("Perfect Subjunctive Active", perfect_active, "Perfect Subjunctive Middle", perfect_middle, "Perfect Subjunctive Passive", perfect_passive)
+show_three("Perf. Act. Subj.", perfect_active, "Perf. Mid. Subj.", perfect_middle, "Perf. Pass. Subj.", perfect_passive)
