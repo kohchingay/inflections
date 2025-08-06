@@ -14,7 +14,7 @@ st.markdown("""
             width: 100%;
         }
         th, td {
-            padding: 0.5rem 1rem;
+            padding: 0rem 0rem;
             text-align: center;
             white-space: nowrap;
         }
