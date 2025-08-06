@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout="wide")
+
 st.title("Conjugation of λύω")
 st.write("Full indicative inflections of λύω organized by tense and voice.")
 
