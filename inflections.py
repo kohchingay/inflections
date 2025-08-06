@@ -5,8 +5,8 @@ import pandas as pd
 st.markdown("""
     <style>
         .block-container {
-            padding-left: 0.4rem;
-            padding-right: 0.4rem;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
