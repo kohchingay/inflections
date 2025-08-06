@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 
 st.title("Conjugation of λύω")
-st.write("Inflections displayed in the format from the original reference PDF, with tense pairs side by side.")
+st.write("Grouped by tense and voice, with duplicate forms removed for clarity.")
 
-# Helper function to show two tables side by side
+# Helper to show two tables side by side
 def show_side_by_side(title_left, data_left, title_right, data_right):
     col1, col2 = st.columns(2)
     with col1:
@@ -16,49 +16,45 @@ def show_side_by_side(title_left, data_left, title_right, data_right):
         df_right = pd.DataFrame(data_right, columns=["Person", "Singular", "Plural"])
         st.table(df_right)
 
-# Present Indicative
-present_active = [
-    ["1st", "λύω", "λύομεν"],
-    ["2nd", "λύεις", "λύετε"],
-    ["3rd", "λύει", "λύουσι(ν)"]
+# Present & Imperfect Indicative Active (grouped)
+indicative_active = [
+    ["1st", "λύω / ἔλυον", "λύομεν / ἐλύομεν"],
+    ["2nd", "λύεις / ἔλυες", "λύετε / ἐλύετε"],
+    ["3rd", "λύει / ἔλυε(ν)", "λύουσι(ν) / ἔλυον"]
 ]
-present_mp = [
-    ["1st", "λύομαι", "λυόμεθα"],
-    ["2nd", "λύῃ", "λύεσθε"],
-    ["3rd", "λύεται", "λύονται"]
-]
-show_side_by_side("Present Indicative Active", present_active, "Present Indicative Middle/Passive", present_mp)
 
-# Imperfect Indicative
-imperfect_active = [
-    ["1st", "ἔλυον", "ἐλύομεν"],
-    ["2nd", "ἔλυες", "ἐλύετε"],
-    ["3rd", "ἔλυε(ν)", "ἔλυον"]
+# Present & Imperfect Indicative Middle/Passive (grouped)
+indicative_mp = [
+    ["1st", "λύομαι / ἐλυόμην", "λυόμεθα / ἐλυόμεθα"],
+    ["2nd", "λύῃ / ἐλύου", "λύεσθε / ἐλύεσθε"],
+    ["3rd", "λύεται / ἐλύετο", "λύονται / ἐλύοντο"]
 ]
-imperfect_mp = [
-    ["1st", "ἐλυόμην", "ἐλυόμεθα"],
-    ["2nd", "ἐλύου", "ἐλύεσθε"],
-    ["3rd", "ἐλύετο", "ἐλύοντο"]
-]
-show_side_by_side("Imperfect Indicative Active", imperfect_active, "Imperfect Indicative Middle/Passive", imperfect_mp)
 
-# Future Indicative
+show_side_by_side("Present & Imperfect Indicative Active", indicative_active,
+                  "Present & Imperfect Indicative Middle/Passive", indicative_mp)
+
+# Future Indicative Active
 future_active = [
     ["1st", "λύσω", "λύσομεν"],
     ["2nd", "λύσεις", "λύσετε"],
     ["3rd", "λύσει", "λύσουσι(ν)"]
 ]
+
+# Future Indicative Middle
 future_middle = [
     ["1st", "λύσομαι", "λυσόμεθα"],
     ["2nd", "λύσῃ", "λύσεσθε"],
     ["3rd", "λύσεται", "λύσονται"]
 ]
+
+# Future Indicative Passive
 future_passive = [
     ["1st", "λυθήσομαι", "λυθησόμεθα"],
     ["2nd", "λυθήσῃ", "λυθήσεσθε"],
     ["3rd", "λυθήσεται", "λυθήσονται"]
 ]
 
-# Future: show Middle and Passive side by side
-show_side_by_side("Future Indicative Active", future_active, "Future Indicative Middle", future_middle)
+show_side_by_side("Future Indicative Active", future_active,
+                  "Future Indicative Middle", future_middle)
+
 show_side_by_side("Future Indicative Passive", future_passive, "", [])
