@@ -72,4 +72,4 @@ perfect_active = [
     ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
 ]
 
-st.dataframe(perfect_active, columns=["Person", "Singular", "Plural"]
+st.dataframe(perfect_active, columns=["Person", "Singular", "Plural"])
