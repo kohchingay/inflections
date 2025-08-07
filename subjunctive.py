@@ -72,5 +72,4 @@ perfect_active = [
     ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
 ]
 
-st.dataframe(perfect_active, column_config={"1st": {"alignment": "center"}, "2nd": {"alignment": "center"}, "3rd": {"alignment": "center"}}
-            )
+st.dataframe(perfect_active, columns=["Person", "Singular", "Plural"]
