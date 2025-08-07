@@ -1,5 +1,8 @@
 # Imperative Mood
 
+import streamlit as st
+import pandas as pd
+
 # Helper to show three tables side by side
 def show_three(title1, data1, title2, data2, title3, data3):
     col1, col2, col3 = st.columns(3)
