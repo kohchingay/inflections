@@ -71,14 +71,5 @@ perfect_active = [
     ["2nd", "λελύκῃς", "λελύκητε"],
     ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
 ]
-perfect_middle = [
-    ["1st", "λελύκωμαι", "λελυκώμεθα"],
-    ["2nd", "λελύκῃ", "λελύκησθε"],
-    ["3rd", "λελύκηται", "λελυκῶνται"]
-]
-perfect_passive = [
-    ["1st", "λελυθῶ", "λελυθῶμεν"],
-    ["2nd", "λελυθῇς", "λελυθῆτε"],
-    ["3rd", "λελυθῇ", "λελυθῶσι(ν)"]
-]
-show_three("Perf. Act. Subj.", perfect_active, "Perf. Mid. Subj.", perfect_middle, "Perf. Pass. Subj.", perfect_passive)
+
+st.write(perfect_active)
