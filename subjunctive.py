@@ -72,4 +72,4 @@ perfect_active = [
     ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
 ]
 
-st.write(perfect_active)
+st.dataframe(perfect_active, column_config={"1st": {"alignment": "center"}, "2nd", "3rd"}
