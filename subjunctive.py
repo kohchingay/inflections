@@ -75,5 +75,7 @@ perfect_active = [
 show_three("Perf. Act. Subj.", perfect_active, " ", [], " ", [])
 
 st.subheader("Perf. Act. Subj.")
-df_perfect_active = pd.DataFrame(perfect_active, columns=["Person", "Singular", "Plural"])
-st.table(df_perfect_active)
+col1, col2, col3 = st.columns([1, 1, 1])
+with col2:
+    df_perfect_active = pd.DataFrame(perfect_active, columns=["Person", "Singular", "Plural"])
+    st.table(df_perfect_active)
