@@ -64,12 +64,3 @@ aorist_passive = [
     ["3rd", "λυθῇ", "λυθῶσι(ν)"]
 ]
 show_three("Aor. Act. Subj.", aorist_active, "Aor. Mid. Subj.", aorist_middle, "Aor. Pass. Subj.", aorist_passive)
-
-# Perfect Subjunctive
-perfect_active = [
-    ["1st", "λελύκω", "λελύκωμεν"],
-    ["2nd", "λελύκῃς", "λελύκητε"],
-    ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
-]
-
-show_three("Perf. Act. Subj.", perfect_active, " ", , " ", )
