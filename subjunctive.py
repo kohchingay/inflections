@@ -72,10 +72,8 @@ perfect_active = [
     ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
 ]
 
-show_three("Perf. Act. Subj.", perfect_active, " ", [], " ", [])
-
 st.subheader("Perf. Act. Subj.")
 col1, col2, col3 = st.columns([1, 1, 1])
-with col2:
+with col1:
     df_perfect_active = pd.DataFrame(perfect_active, columns=["Person", "Singular", "Plural"])
     st.table(df_perfect_active)
