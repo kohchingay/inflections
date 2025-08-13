@@ -80,3 +80,15 @@ aorist_passive = [
 show_three("Aor. Act. Imp.", aorist_active,
            "Aor. Mid. Imp.", aorist_middle,
            "Aor. Pass. Imp.", aorist_passive)
+
+# === Second Aorist Imperative ===
+second_aorist_active = [
+    ["2nd", "λάβε", "λάβετε"],
+    ["3rd", "λαβέτω", "λαβέτωσαν"]
+]
+second_aorist_middle = [
+    ["2nd", "λαβοῦ", "λάβεσθε"],
+    ["3rd", "λαβέσθω", "λαβέσθωσαν"]
+]
+show_two("Second Aorist Act. Imp.", second_aorist_active,
+         "Second Aorist Mid./Pass. Imp.", second_aorist_middle)
