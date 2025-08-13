@@ -92,3 +92,43 @@ second_aorist_middle = [
 ]
 show_two("2nd Aorist Act. Imp.", second_aorist_active,
          "2nd Aorist Mid./Pass. Imp.", second_aorist_middle)
+
+
+from st_aggrid import AgGrid, GridOptionsBuilder
+
+# Sample data: Greek words in a DataFrame
+data = {
+    "GreekWord": ["λόγος", "λέγω", "λόγος", "γράφω", "λέγω"],
+    "TableName": ["Noun Table", "Verb Table", "Text Table", "Verb Table", "Other Table"],
+}
+df = pd.DataFrame(data)
+
+# Precomputed mapping of Greek word form to the list of tables it appears in
+greek_form_tables = {
+    "λόγος": ["Noun Table", "Text Table"],
+    "λέγω": ["Verb Table", "Other Table"],
+    "γράφω": ["Verb Table"]
+}
+
+# Function to provide tooltip content for each Greek word cell:
+def get_tooltip(word, current_table):
+    tables = greek_form_tables.get(word, [])
+    # Exclude the current table from the tooltip list (optional)
+    other_tables = [t for t in tables if t != current_table]
+    if other_tables:
+        return "Also in: " + ", ".join(other_tables)
+    else:
+        return "No other tables"
+
+# Add a tooltip column corresponding to the GreekWord with tooltip text
+df["Tooltip"] = df.apply(lambda row: get_tooltip(row["GreekWord"], row["TableName"]), axis=1)
+
+# Configure AgGrid with tooltip on GreekWord column using tooltipField
+gb = GridOptionsBuilder.from_dataframe(df)
+gb.configure_column("GreekWord", tooltipField="Tooltip", header_name="Greek Word")
+gb.configure_column("TableName", header_name="Table Name")
+grid_options = gb.build()
+
+st.write("Greek words table with tooltips showing other tables containing the same word form:")
+
+AgGrid(df, gridOptions=grid_options, height=250, fit_columns_on_grid_load=True)
