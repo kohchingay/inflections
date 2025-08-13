@@ -1,7 +1,32 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
+
+# Inject custom CSS for wider columns and smaller headings
+st.markdown("""
+    <style>
+        .block-container {
+            max-width: unset;
+            padding-left: 15rem;
+            padding-right: 15rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 0rem 0rem;
+            text-align: center;
+            white-space: nowrap;
+        }
+        h1, h2, h3, h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 st.title("Subjunctive of λύω")
 
