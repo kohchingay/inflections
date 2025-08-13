@@ -9,14 +9,14 @@ st.title("Conjugation of λύω")
 st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Custom CSS to reduce margins
-st.markdown(\"\"\"
+st.markdown("""
     <style>
         .main .block-container {
             padding-left: 1rem;
             padding-right: 1rem;
         }
     </style>
-\"\"\", unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # Helper to show two tables side by side
 def show_two(title1, data1, title2, data2):
