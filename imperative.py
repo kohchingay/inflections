@@ -1,5 +1,23 @@
 # Imperative Mood
 
+import streamlit as st
+import pandas as pd
+
+# === Reduce margins and allow more space ===
+st.markdown(
+    """
+    <style>
+        /* Reduce main content max-width */
+        .block-container {
+            max-width: 95%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Helper to show three tables side by side
 def show_three(title1, data1, title2, data2, title3, data3):
     col1, col2, col3 = st.columns(3)
@@ -25,8 +43,10 @@ present_middle = [
     ["2nd", "λύου", "λύεσθε"],
     ["3rd", "λυέσθω", "λυέσθων"]
 ]
-present_passive = present_middle  # identical in form
-show_three("Present Imperative Active", present_active, "Present Imperative Middle", present_middle, "Present Imperative Passive", present_passive)
+present_passive = present_middle
+show_three("Present Imperative Active", present_active,
+           "Present Imperative Middle", present_middle,
+           "Present Imperative Passive", present_passive)
 
 # Aorist Imperative
 aorist_active = [
@@ -41,7 +61,9 @@ aorist_passive = [
     ["2nd", "λύθητι", "λύθητε"],
     ["3rd", "λυθήτω", "λυθέντων"]
 ]
-show_three("Aorist Imperative Active", aorist_active, "Aorist Imperative Middle", aorist_middle, "Aorist Imperative Passive", aorist_passive)
+show_three("Aorist Imperative Active", aorist_active,
+           "Aorist Imperative Middle", aorist_middle,
+           "Aorist Imperative Passive", aorist_passive)
 
 # Perfect Imperative
 perfect_active = [
@@ -56,4 +78,6 @@ perfect_passive = [
     ["2nd", "λελύσο", "λελύσθε"],
     ["3rd", "λελύσθω", "λελύσθων"]
 ]
-show_three("Perfect Imperative Active", perfect_active, "Perfect Imperative Middle", perfect_middle, "Perfect Imperative Passive", perfect_passive)
+show_three("Perfect Imperative Active", perfect_active,
+           "Perfect Imperative Middle", perfect_middle,
+           "Perfect Imperative Passive", perfect_passive)
