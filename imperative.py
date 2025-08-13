@@ -1,35 +1,5 @@
 # Imperative Mood
 
-import streamlit as st
-import pandas as pd
-
-st.set_page_config(layout="wide")
-
-st.title("Conjugation of λύω")
-st.write("Full indicative inflections of λύω organized by tense and voice.")
-
-# Custom CSS to reduce margins
-st.markdown("""
-    <style>
-        .main .block-container {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# Helper to show two tables side by side
-def show_two(title1, data1, title2, data2):
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader(title1)
-        df1 = pd.DataFrame(data1, columns=["Person", "Singular", "Plural"])
-        st.table(df1)
-    with col2:
-        st.subheader(title2)
-        df2 = pd.DataFrame(data2, columns=["Person", "Singular", "Plural"])
-        st.table(df2)
-
 # Helper to show three tables side by side
 def show_three(title1, data1, title2, data2, title3, data3):
     col1, col2, col3 = st.columns(3)
@@ -46,51 +16,44 @@ def show_three(title1, data1, title2, data2, title3, data3):
         df3 = pd.DataFrame(data3, columns=["Person", "Singular", "Plural"])
         st.table(df3)
 
-# Present Subjunctive
+# Present Imperative
 present_active = [
-    ["1st", "λύω", "λύωμεν"],
-    ["2nd", "λύῃς", "λύητε"],
-    ["3rd", "λύῃ", "λύωσι(ν)"]
+    ["2nd", "λύε", "λύετε"],
+    ["3rd", "λυέτω", "λυόντων"]
 ]
-present_mp = [
-    ["1st", "λύωμαι", "λυώμεθα"],
-    ["2nd", "λύῃ", "λύησθε"],
-    ["3rd", "λύηται", "λύωνται"]
+present_middle = [
+    ["2nd", "λύου", "λύεσθε"],
+    ["3rd", "λυέσθω", "λυέσθων"]
 ]
-show_two("Present Subjunctive Active", present_active, "Present Subjunctive Middle/Passive", present_mp)
+present_passive = present_middle  # identical in form
+show_three("Present Imperative Active", present_active, "Present Imperative Middle", present_middle, "Present Imperative Passive", present_passive)
 
-# Aorist Subjunctive
+# Aorist Imperative
 aorist_active = [
-    ["1st", "λύσω", "λύσωμεν"],
-    ["2nd", "λύσῃς", "λύσητε"],
-    ["3rd", "λύσῃ", "λύσωσι(ν)"]
+    ["2nd", "λῦσον", "λύσατε"],
+    ["3rd", "λυσάτω", "λυσάντων"]
 ]
 aorist_middle = [
-    ["1st", "λύσωμαι", "λυσώμεθα"],
-    ["2nd", "λύσῃ", "λύσησθε"],
-    ["3rd", "λύσηται", "λύσωνται"]
+    ["2nd", "λύσαι", "λύσασθε"],
+    ["3rd", "λυσάσθω", "λυσάσθων"]
 ]
 aorist_passive = [
-    ["1st", "λυθῶ", "λυθῶμεν"],
-    ["2nd", "λυθῇς", "λυθῆτε"],
-    ["3rd", "λυθῇ", "λυθῶσι(ν)"]
+    ["2nd", "λύθητι", "λύθητε"],
+    ["3rd", "λυθήτω", "λυθέντων"]
 ]
-show_three("Aorist Subjunctive Active", aorist_active, "Aorist Subjunctive Middle", aorist_middle, "Aorist Subjunctive Passive", aorist_passive)
+show_three("Aorist Imperative Active", aorist_active, "Aorist Imperative Middle", aorist_middle, "Aorist Imperative Passive", aorist_passive)
 
-# Perfect Subjunctive
+# Perfect Imperative
 perfect_active = [
-    ["1st", "λελύκω", "λελύκωμεν"],
-    ["2nd", "λελύκῃς", "λελύκητε"],
-    ["3rd", "λελύκῃ", "λελύκωσι(ν)"]
+    ["2nd", "λελύκε", "λελύκετε"],
+    ["3rd", "λελυκέτω", "λελυκόντων"]
 ]
 perfect_middle = [
-    ["1st", "λελύκωμαι", "λελυκώμεθα"],
-    ["2nd", "λελύκῃ", "λελύκησθε"],
-    ["3rd", "λελύκηται", "λελυκῶνται"]
+    ["2nd", "λελύσο", "λελύσθε"],
+    ["3rd", "λελύσθω", "λελύσθων"]
 ]
 perfect_passive = [
-    ["1st", "λελυθῶ", "λελυθῶμεν"],
-    ["2nd", "λελυθῇς", "λελυθῆτε"],
-    ["3rd", "λελυθῇ", "λελυθῶσι(ν)"]
+    ["2nd", "λελύσο", "λελύσθε"],
+    ["3rd", "λελύσθω", "λελύσθων"]
 ]
-show_three("Perfect Subjunctive Active", perfect_active, "Perfect Subjunctive Middle", perfect_middle, "Perfect Subjunctive Passive", perfect_passive)
+show_three("Perfect Imperative Active", perfect_active, "Perfect Imperative Middle", perfect_middle, "Perfect Imperative Passive", perfect_passive)
