@@ -36,7 +36,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("Indicative of λύω")
-st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper functions
 def show_two(title1, data1, title2, data2):
