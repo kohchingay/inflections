@@ -57,8 +57,8 @@ present_middle_passive = [
 ]
 
 # Show Present: Active + Middle/Passive merged
-show_two("Present Imperative Active", present_active,
-         "Present Imperative Middle & Passive", present_middle_passive)
+show_two("Pres. Αct. Imp.", present_active,
+         "Pres. Mid./Pass. Imp.", present_middle_passive)
 
 # === Aorist Imperative ===
 aorist_active = [
@@ -75,6 +75,6 @@ aorist_passive = [
 ]
 
 # Show Aorist as three separate tables
-show_three("Aorist Imperative Active", aorist_active,
-           "Aorist Imperative Middle", aorist_middle,
-           "Aorist Imperative Passive", aorist_passive)
+show_three("Aor. Act. Imp.", aorist_active,
+           "Aor. Mid. Imp.", aorist_middle,
+           "Aor. Pass. Imp.", aorist_passive)
