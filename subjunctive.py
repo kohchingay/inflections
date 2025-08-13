@@ -4,7 +4,6 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 st.title("Subjunctive of λύω")
-st.write("Full indicative inflections of λύω organized by tense and voice.")
 
 # Helper to show two tables side by side
 def show_two(title1, data1, title2, data2):
