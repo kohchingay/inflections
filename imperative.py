@@ -3,6 +3,8 @@
 import streamlit as st
 import pandas as pd
 
+st.title("Imperative of λύω")
+
 # === Reduce margins and allow more space ===
 st.markdown(
     """
