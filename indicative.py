@@ -79,13 +79,13 @@ show_three("Fut. Act. Ind.", future_active, "Fut. Mid. Ind.", future_middle, "Fu
 aorist1_active = [["1st", "ἔλυσα", "ἐλύσαμεν"], ["2nd", "ἔλυσας", "ἐλύσατε"], ["3rd", "ἔλυσε(ν)", "ἔλυσαν"]]
 aorist1_middle = [["1st", "ἐλυσάμην", "ἐλυσάμεθα"], ["2nd", "ἐλύσω", "ἐλύσασθε"], ["3rd", "ἐλύσατο", "ἐλύσαντο"]]
 aorist1_passive = [["1st", "ἐλύθην", "ἐλύθημεν"], ["2nd", "ἐλύθης", "ἐλύθητε"], ["3rd", "ἐλύθη", "ἐλύθησαν"]]
-show_three("1Aor. Act. Ind.", aorist1_active, "1Aor. Mid. Ind.", aorist1_middle, "1Aor. Pass. Ind.", aorist1_passive)
+show_three("Aor. Act. Ind.", aorist1_active, "Aor. Mid. Ind.", aorist1_middle, "Aor. Pass. Ind.", aorist1_passive)
 
 # 2nd Aorist Indicative
 aorist2_active = [["1st", "ἔλαβον", "ἐλάβομεν"], ["2nd", "ἔλαβες", "ἐλάβετε"], ["3rd", "ἔλαβε(ν)", "ἔλαβον"]]
 aorist2_middle = [["1st", "ἐλαβόμην", "ἐλαβόμεθα"], ["2nd", "ἐλάβου", "ἐλάβεσθε"], ["3rd", "ἐλάβετο", "ἐλάβοντο"]]
 aorist2_passive = [["1st", "ἐλήμφθην", "ἐλήμφθημεν"], ["2nd", "ἐλήμφθης", "ἐλήμφθητε"], ["3rd", "ἐλήμφθη", "ἐλήμφθησαν"]]
-show_three("2Aor. Act. Ind.", aorist2_active, "2Aor. Mid. Ind.", aorist2_middle, "2Aor. Pass. Ind.", aorist2_passive)
+show_three("2nd Aor. Act. Ind.", aorist2_active, "2nd Aor. Mid. Ind.", aorist2_middle, "2nd Aor. Pass. Ind.", aorist2_passive)
 
 # Perfect Indicative
 perfect_active = [["1st", "λέλυκα", "λελύκαμεν"], ["2nd", "λέλυκας", "λελύκατε"], ["3rd", "λέλυκε(ν)", "λελύκασι(ν)"]]
