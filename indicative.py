@@ -84,7 +84,7 @@ show_three("Aor. Act. Ind.", aorist1_active, "Aor. Mid. Ind.", aorist1_middle, "
 # 2nd Aorist Indicative
 aorist2_active = [["1st", "ἔλαβον", "ἐλάβομεν"], ["2nd", "ἔλαβες", "ἐλάβετε"], ["3rd", "ἔλαβε(ν)", "ἔλαβον"]]
 aorist2_middle = [["1st", "ἐλαβόμην", "ἐλαβόμεθα"], ["2nd", "ἐλάβου", "ἐλάβεσθε"], ["3rd", "ἐλάβετο", "ἐλάβοντο"]]
-aorist2_passive = [["1st", "ἐλήμφθην", "ἐλήμφθημεν"], ["2nd", "ἐλήμφθης", "ἐλήμφθητε"], ["3rd", "ἐλήμφθη", "ἐλήμφθησαν"]]
+aorist2_passive = [["1st", "ἐγράφην", "ἐγράφημεν"], ["2nd", "ἐγράφης", "ἐγράφητε"], ["3rd", "ἐγράφη", "ἐγράφησαν"]]
 show_three("2nd Aor. Act. Ind.", aorist2_active, "2nd Aor. Mid. Ind.", aorist2_middle, "2nd Aor. Pass. Ind.", aorist2_passive)
 
 # Perfect Indicative
