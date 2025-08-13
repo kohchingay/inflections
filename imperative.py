@@ -90,5 +90,5 @@ second_aorist_middle = [
     ["2nd", "λαβοῦ", "λάβεσθε"],
     ["3rd", "λαβέσθω", "λαβέσθωσαν"]
 ]
-show_two("Second Aorist Act. Imp.", second_aorist_active,
-         "Second Aorist Mid./Pass. Imp.", second_aorist_middle)
+show_two("2nd Aorist Act. Imp.", second_aorist_active,
+         "2nd Aorist Mid./Pass. Imp.", second_aorist_middle)
