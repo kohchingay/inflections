@@ -10,8 +10,8 @@ st.markdown(
         /* Reduce main content max-width */
         .block-container {
             max-width: 95%;
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
     </style>
     """,
@@ -48,12 +48,12 @@ def show_two(title1, data1, title2, data2):
 
 # === Present Imperative ===
 present_active = [
-    ["2nd", "λύε", "λύετε"],
-    ["3rd", "λυέτω", "λυόντων"]
+    ["2nd", "λῦε", "λύετε"],
+    ["3rd", "λυέτω", "λυέτωσαν"]
 ]
 present_middle_passive = [
     ["2nd", "λύου", "λύεσθε"],
-    ["3rd", "λυέσθω", "λυέσθων"]
+    ["3rd", "λυέσθω", "λυέσθωσαν"]
 ]
 
 # Show Present: Active + Middle/Passive merged
@@ -63,15 +63,15 @@ show_two("Present Imperative Active", present_active,
 # === Aorist Imperative ===
 aorist_active = [
     ["2nd", "λῦσον", "λύσατε"],
-    ["3rd", "λυσάτω", "λυσάντων"]
+    ["3rd", "λυσάτω", "λυσάτωσαν"]
 ]
 aorist_middle = [
-    ["2nd", "λύσαι", "λύσασθε"],
-    ["3rd", "λυσάσθω", "λυσάσθων"]
+    ["2nd", "λῦσαι", "λύσασθε"],
+    ["3rd", "λυσάσθω", "λυσάσθωσαν"]
 ]
 aorist_passive = [
     ["2nd", "λύθητι", "λύθητε"],
-    ["3rd", "λυθήτω", "λυθέντων"]
+    ["3rd", "λυθήτω", "λυθήτωσαν"]
 ]
 
 # Show Aorist as three separate tables
