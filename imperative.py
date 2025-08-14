@@ -98,7 +98,7 @@ from st_aggrid import AgGrid, GridOptionsBuilder
 
 # Sample data: Greek words in a DataFrame
 data = {
-    "GreekWord": ["λόγος", "λέγω", "λόγος", "γράφω", "λέγω"],
+    "GreekWord": ["λῦε", "λύετε", "λυέτω", "λυέτωσαν", "λέγω"],
     "TableName": ["Noun Table", "Verb Table", "Text Table", "Verb Table", "Other Table"],
 }
 df = pd.DataFrame(data)
