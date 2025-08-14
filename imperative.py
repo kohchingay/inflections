@@ -93,6 +93,7 @@ second_aorist_middle = [
 show_two("2nd Aorist Act. Imp.", second_aorist_active,
          "2nd Aorist Mid./Pass. Imp.", second_aorist_middle)
 
+!pip install AgGrid
 from st_aggrid import AgGrid, GridOptionsBuilder
 
 # Sample data: Greek words in a DataFrame
