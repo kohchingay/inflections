@@ -93,7 +93,7 @@ second_aorist_middle = [
 show_two("2nd Aorist Act. Imp.", second_aorist_active,
          "2nd Aorist Mid./Pass. Imp.", second_aorist_middle)
 
-
+"""
 from st_aggrid import AgGrid, GridOptionsBuilder
 
 # Sample data: Greek words in a DataFrame
@@ -132,3 +132,4 @@ grid_options = gb.build()
 st.write("Greek words table with tooltips showing other tables containing the same word form:")
 
 AgGrid(df, gridOptions=grid_options, height=250, fit_columns_on_grid_load=True)
+"""
