@@ -58,6 +58,11 @@ st.markdown("""
             visibility: visible;
             opacity: 1;
         }
+        /* Highlight the td cell when hovering the tooltip */
+        td:has(.tooltip:hover) {
+            background-color: #f5f5a0;
+            transition: background-color 0.2s ease-in-out;
+        }
     </style>
 """, unsafe_allow_html=True)
 
