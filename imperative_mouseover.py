@@ -103,7 +103,7 @@ def show_three(title1, data1, title2, data2, title3, data3):
 
 # Present Imperative
 present_active = [
-    ["2nd", with_tooltip("λῦε", "Pres. Act. Imp. 2nd sg: Loose!"), with_tooltip("λύετε", "Pres. Act. Imp. 2nd pl: Loose! (plural)")],
+    ["2nd", with_tooltip("λῦε", "Pres. Act. Imp. 2nd sg: Loose!"), with_tooltip("λύετε", "Pres. Act. Imp. 2nd pl: Loose! (plural)<br>Also 2nd Pres.Act.Ind. 2nd pl")],
     ["3rd", with_tooltip("λυέτω", "Pres. Act. Imp. 3rd sg: Let him/her loose!"), with_tooltip("λυέτωσαν", "Pres. Act. Imp. 3rd pl: Let them loose!")]
 ]
 present_middle_passive = [
