@@ -85,6 +85,9 @@ def show_three(title1, data1, title2, data2, title3, data3):
         st.markdown(f"### {title3}")
         st.table(pd.DataFrame(data3, columns=["Person", "Singular", "Plural"]))
 
+def with_tooltip(word, note):
+    return f'<span class="tooltip">{word}<span class="tooltiptext">{note}</span></span>'
+
 # Present Indicative
 present_active = [["1st", "λύω", "λύομεν"], ["2nd", "λύεις", "λύετε"], ["3rd", "λύει", "λύουσι(ν)"]]
 present_mp = [["1st", "λύομαι", "λυόμεθα"], ["2nd", "λύῃ", "λύεσθε"], ["3rd", "λύεται", "λύονται"]]
