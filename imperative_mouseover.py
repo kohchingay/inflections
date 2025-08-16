@@ -53,6 +53,8 @@ st.markdown("""
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
+            white-space: normal;        /* allow line wrapping */
+            word-wrap: break-word;      /* support long words */
         }
         .tooltip:hover .tooltiptext {
             visibility: visible;
