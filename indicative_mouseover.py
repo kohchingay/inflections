@@ -55,6 +55,7 @@ st.markdown("""
             transition: opacity 0.3s;
             white-space: normal;        /* allow line wrapping */
             word-wrap: break-word;      /* support long words */
+            white-space: pre-line;   /* interpret \n as line breaks */
         }
         .tooltip:hover .tooltiptext {
             visibility: visible;
