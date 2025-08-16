@@ -99,6 +99,12 @@ present_active = [
     ["3rd", with_tooltip("λύει", "He/She/It looses"), with_tooltip("λύουσι(ν)", "They loose")],
 ]
 
+def show_table(title, data):
+    df = pd.DataFrame(data, columns=["Person", "Singular", "Plural"])
+    st.markdown(f"### {title}", unsafe_allow_html=True)
+    st.markdown(df.to_html(escape=False, index=False), unsafe_allow_html=True)
+
+
 # Imperfect Indicative
 imperfect_active = [["1st", "ἔλυον", "ἐλύομεν"], ["2nd", "ἔλυες", "ἐλύετε"], ["3rd", "ἔλυε(ν)", "ἔλυον"]]
 imperfect_mp = [["1st", "ἐλυόμην", "ἐλυόμεθα"], ["2nd", "ἐλύου", "ἐλύεσθε"], ["3rd", "ἐλύετο", "ἐλύοντο"]]
