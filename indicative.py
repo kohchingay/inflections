@@ -24,13 +24,39 @@ st.markdown("""
             width: 100%;
         }
         th, td {
-            padding: 0rem 0rem;
+            padding: 0.3rem 0.6rem;
             text-align: center;
             white-space: nowrap;
         }
         h1, h2, h3, h4 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
+        }
+        /* Tooltip styling */
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: max-content;
+            max-width: 250px;
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; 
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
         }
     </style>
 """, unsafe_allow_html=True)
