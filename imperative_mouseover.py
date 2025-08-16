@@ -121,7 +121,7 @@ aorist_active = [
     ["3rd", with_tooltip("λυσάτω", "1st Aor.Act.Imp. 3rd sg: Let him/her loose!"), with_tooltip("λυσάτωσαν", "1st Aor.Act.Imp. 3rd pl: Let them loose!")]
 ]
 aorist_middle = [
-    ["2nd", with_tooltip("λῦσαι", "1st Aor.Mid.Imp. 2nd sg: Loose for yourself!<br>Also Aor.Act.Inf."), with_tooltip("λύσασθε", "1st Aor.Mid.Imp. 2nd pl: Loose for yourselves!")],
+    ["2nd", with_tooltip("λῦσαι", "1st Aor.Mid.Imp. 2nd sg: Loose for yourself!<br><span class='note-gold'>Also Aor.Act.Inf.</span>"), with_tooltip("λύσασθε", "1st Aor.Mid.Imp. 2nd pl: Loose for yourselves!")],
     ["3rd", with_tooltip("λυσάσθω", "1st Aor.Mid.Imp. 3rd sg: Let him/her loose for self!"), with_tooltip("λυσάσθωσαν", "1st Aor.Mid.Imp. 3rd pl: Let them loose for themselves!")]
 ]
 aorist_passive = [
