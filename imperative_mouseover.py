@@ -115,27 +115,27 @@ show_two("Pres. Act. Imp.", present_active, "Pres. Mid./Pass. Imp.", present_mid
 
 # Aorist Imperative
 aorist_active = [
-    ["2nd", with_tooltip("λῦσον", "1st Aor. Act. Imp. 2nd sg: Loose! (point action)"), with_tooltip("λύσατε", "1st Aor. Act. Imp. 2nd pl: Loose! (plural, point action)")],
-    ["3rd", with_tooltip("λυσάτω", "1st Aor. Act. Imp. 3rd sg: Let him/her loose!"), with_tooltip("λυσάτωσαν", "1st Aor. Act. Imp. 3rd pl: Let them loose!")]
+    ["2nd", with_tooltip("λῦσον", "1st Aor.Act.Imp. 2nd sg: Loose! (point action)"), with_tooltip("λύσατε", "1st Aor.Act.Imp. 2nd pl: Loose! (plural, point action)")],
+    ["3rd", with_tooltip("λυσάτω", "1st Aor.Act.Imp. 3rd sg: Let him/her loose!"), with_tooltip("λυσάτωσαν", "1st Aor.Act.Imp. 3rd pl: Let them loose!")]
 ]
 aorist_middle = [
-    ["2nd", with_tooltip("λῦσαι", "1st Aor. Mid. Imp. 2nd sg: Loose for yourself!"), with_tooltip("λύσασθε", "1st Aor. Mid. Imp. 2nd pl: Loose for yourselves!")],
-    ["3rd", with_tooltip("λυσάσθω", "1st Aor. Mid. Imp. 3rd sg: Let him/her loose for self!"), with_tooltip("λυσάσθωσαν", "1st Aor. Mid. Imp. 3rd pl: Let them loose for themselves!")]
+    ["2nd", with_tooltip("λῦσαι", "1st Aor.Mid.Imp. 2nd sg: Loose for yourself!<br>Also Aor.Act.Inf."), with_tooltip("λύσασθε", "1st Aor.Mid.Imp. 2nd pl: Loose for yourselves!")],
+    ["3rd", with_tooltip("λυσάσθω", "1st Aor.Mid.Imp. 3rd sg: Let him/her loose for self!"), with_tooltip("λυσάσθωσαν", "1st Aor.Mid.Imp. 3rd pl: Let them loose for themselves!")]
 ]
 aorist_passive = [
-    ["2nd", with_tooltip("λύθητι", "1st Aor. Pass. Imp. 2nd sg: Be loosed!"), with_tooltip("λύθητε", "1st Aor. Pass. Imp. 2nd pl: Be loosed!")],
-    ["3rd", with_tooltip("λυθήτω", "1st Aor. Pass. Imp. 3rd sg: Let him/her be loosed!"), with_tooltip("λυθήτωσαν", "1st Aor. Pass. Imp. 3rd pl: Let them be loosed!")]
+    ["2nd", with_tooltip("λύθητι", "1st Aor.Pass.Imp. 2nd sg: Be loosed!"), with_tooltip("λύθητε", "1st Aor.Pass.Imp. 2nd pl: Be loosed!")],
+    ["3rd", with_tooltip("λυθήτω", "1st Aor.Pass.Imp. 3rd sg: Let him/her be loosed!"), with_tooltip("λυθήτωσαν", "1st Aor.Pass.Imp. 3rd pl: Let them be loosed!")]
 ]
 show_three("Aor. Act. Imp.", aorist_active, "Aor. Mid. Imp.", aorist_middle, "Aor. Pass. Imp.", aorist_passive)
 
 
 # 2nd Aorist Imperative (for λάβω = I take)
 second_aorist_active = [
-    ["2nd", with_tooltip("λάβε", "2nd Aor. Act. Imp. 2nd sg: Take!"), with_tooltip("λάβετε", "2nd Aor. Act. Imp. 2nd pl: Take! (plural)")],
-    ["3rd", with_tooltip("λαβέτω", "2nd Aor. Act. Imp. 3rd sg: Let him/her take!"), with_tooltip("λαβέτωσαν", "2nd Aor. Act. Imp. 3rd pl: Let them take!")]
+    ["2nd", with_tooltip("λάβε", "2nd Aor.Act.Imp. 2nd sing: Take!"), with_tooltip("λάβετε", "2nd Aor.Act.Imp. 2nd pl: Take! (plural)")],
+    ["3rd", with_tooltip("λαβέτω", "2nd Aor.Act.Imp. 3rd sing: Let him/her take!"), with_tooltip("λαβέτωσαν", "2nd Aor.Act.Imp. 3rd pl: Let them take!")]
 ]
 second_aorist_middle = [
-    ["2nd", with_tooltip("λαβοῦ", "2nd Aor. Mid. Imp. 2nd sg: Take for yourself!"), with_tooltip("λάβεσθε", "2nd Aor. Mid. Imp. 2nd pl: Take for yourselves!")],
-    ["3rd", with_tooltip("λαβέσθω", "2nd Aor. Mid. Imp. 3rd sg: Let him/her take for self!"), with_tooltip("λαβέσθωσαν", "2nd Aor. Mid. Imp. 3rd pl: Let them take for themselves!")]
+    ["2nd", with_tooltip("λαβοῦ", "2nd Aor.Mid.Imp. 2nd sg: Take for yourself!"), with_tooltip("λάβεσθε", "2nd Aor.Mid.Imp. 2nd pl: Take for yourselves!")],
+    ["3rd", with_tooltip("λαβέσθω", "2nd Aor.Mid.Imp. 3rd sg: Let him/her take for self!"), with_tooltip("λαβέσθωσαν", "2nd Aor.Mid.Imp. 3rd pl: Let them take for themselves!")]
 ]
-show_two("2nd Aorist Act. Imp.", second_aorist_active, "2nd Aorist Mid./Pass. Imp.", second_aorist_middle)
+show_two("2nd Aor.Act.Imp.", second_aorist_active, "2nd Aor.Mid./Pass.Imp.", second_aorist_middle)
