@@ -90,6 +90,12 @@ present_active = [["1st", "λύω", "λύομεν"], ["2nd", "λύεις", "λύ
 present_mp = [["1st", "λύομαι", "λυόμεθα"], ["2nd", "λύῃ", "λύεσθε"], ["3rd", "λύεται", "λύονται"]]
 show_two("Pres. Act. Ind.", present_active, "Pres. Mid./Pass. Ind.", present_mp)
 
+present_active = [
+    ["1st", with_tooltip("λύω", "I loose / Present Active 1st sg."), with_tooltip("λύομεν", "We loose / 1st pl.")],
+    ["2nd", with_tooltip("λύεις", "You loose (sg.)"), with_tooltip("λύετε", "You loose (pl.)")],
+    ["3rd", with_tooltip("λύει", "He/She/It looses"), with_tooltip("λύουσι(ν)", "They loose")],
+]
+
 # Imperfect Indicative
 imperfect_active = [["1st", "ἔλυον", "ἐλύομεν"], ["2nd", "ἔλυες", "ἐλύετε"], ["3rd", "ἔλυε(ν)", "ἔλυον"]]
 imperfect_mp = [["1st", "ἐλυόμην", "ἐλυόμεθα"], ["2nd", "ἐλύου", "ἐλύεσθε"], ["3rd", "ἐλύετο", "ἐλύοντο"]]
