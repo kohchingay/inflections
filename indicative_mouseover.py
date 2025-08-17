@@ -106,7 +106,7 @@ def show_three(title1, data1, title2, data2, title3, data3):
 
 # Present Indicative
 present_active = [
-    ["1st", with_tooltip("λύω", "Present Active 1st singular: I loose"), with_tooltip("λύομεν", "Present Active 1st plural: we loose")],
+    ["1st", with_tooltip("λύω", "Present Active 1st singular: I loose.<br><span class='note-gold'>Also Pres.Act.Subj. 1st sing.</span>"), with_tooltip("λύομεν", "Present Active 1st plural: we loose")],
     ["2nd", with_tooltip("λύεις", "Present Active 2nd singular: you loose"), with_tooltip("λύετε", "Pres.Act.Ind.2nd.plural: you (pl) loose.<br><span class='note-gold'>Also Pres.Act.Imp. 2nd pl</span>")],
     ["3rd", with_tooltip("λύει", "Present Active 3rd singular: he/she/it looses"), with_tooltip("λύουσι(ν)", "Present Active 3rd plural: they loose")]
 ]
