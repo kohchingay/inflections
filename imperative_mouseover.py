@@ -16,7 +16,7 @@ st.title("Imperative of λύω")
 st.markdown("""
     <style>
         .block-container {
-            max-width: 95%;
+            max-width: unset;
             padding-left: 15rem;
             padding-right: 15rem;
             padding-top: 1rem;
