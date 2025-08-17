@@ -31,6 +31,7 @@ st.markdown("""
             }
             table {
                 font-size: 0.85rem;   /* smaller font for narrow screens */
+                width: 100%;
             }
         }
 
@@ -40,9 +41,7 @@ st.markdown("""
         }
 
 /* Tooltip & highlight stay the same */
-        table {
-            width: 100%;
-        }
+
         th, td {
             padding: 0.3rem 0.6rem;
             text-align: center;
