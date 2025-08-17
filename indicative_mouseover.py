@@ -134,7 +134,7 @@ show_two("<span class='note-blue'>Imp. Act. Ind.</span>", imperfect_active, "<sp
 
 # Future Indicative
 future_active = [
-    ["1st", with_tooltip("λύσω", "Future Active 1st singular: I will loose"), with_tooltip("λύσομεν", "Future Active 1st plural: we will loose")],
+    ["1st", with_tooltip("λύσω", "Future Active 1st singular: I will loose<br><span class='note-gold'>Also Aor.Act.Subj. 1st sing.</span>"), with_tooltip("λύσομεν", "Future Active 1st plural: we will loose")],
     ["2nd", with_tooltip("λύσεις", "Future Active 2nd singular: you will loose"), with_tooltip("λύσετε", "Future Active 2nd plural: you (pl) will loose")],
     ["3rd", with_tooltip("λύσει", "Future Active 3rd singular: he/she/it will loose"), with_tooltip("λύσουσι(ν)", "Future Active 3rd plural: they will loose")]
 ]
