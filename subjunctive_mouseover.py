@@ -113,7 +113,7 @@ present_mp = [
     ["2nd", with_tooltip("λύῃ", "Pres. Mid./Pass. Subj. 2nd Sg — that you may loose for yourself / may be loosed"), with_tooltip("λύησθε", "Pres. Mid./Pass. Subj. 2nd Pl — that you (pl) may be loosed")],
     ["3rd", with_tooltip("λύηται", "Pres. Mid./Pass. Subj. 3rd Sg — that he/she/it may be loosed"), with_tooltip("λύωνται", "Pres. Mid./Pass. Subj. 3rd Pl — that they may be loosed")]
 ]
-show_two("Pres. Act. Subj.", present_active, "Pres. Mid./Pass. Subj.", present_mp)
+show_two("<span class='note-blue'>Pres. Act. Subj.</span>", present_active, "Pres. Mid./Pass. Subj.", present_mp)
 
 # Aorist Subjunctive
 aorist_active = [
