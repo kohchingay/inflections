@@ -66,7 +66,8 @@ st.markdown("""
             background-color: #f5f5a0;
             transition: background-color 0.2s ease-in-out;
         }
-        .note-gold { color: #ffcc00; font-weight: bold; }  
+        .note-gold { color: #ffcc00; font-weight: bold; }
+        .note-blue { color: #66ccff; font-weight: bold; } 
     </style>
 """, unsafe_allow_html=True)
 
@@ -114,7 +115,7 @@ present_mp = [
     ["2nd", with_tooltip("λύῃ", "Present Middle/Passive 2nd singular: you loose for yourself/are loosed"), with_tooltip("λύεσθε", "Present Middle/Passive 2nd plural: you (pl) are loosed")],
     ["3rd", with_tooltip("λύεται", "Present Middle/Passive 3rd singular: he/she/it is loosed"), with_tooltip("λύονται", "Present Middle/Passive 3rd plural: they are loosed")]
 ]
-show_two("Pres. Act. Ind.", present_active, "Pres. Mid./Pass. Ind.", present_mp)
+show_two("<span class='note-blue'>Pres. Act. Ind.</span>", present_active, "<span class='note-blue'>Pres. Mid./Pass. Ind.</span>", present_mp)
 
 
 # Imperfect Indicative
@@ -128,7 +129,7 @@ imperfect_mp = [
     ["2nd", with_tooltip("ἐλύου", "Imperfect Mid./Pass. 2nd singular: you were being loosed"), with_tooltip("ἐλύεσθε", "Imperfect Mid./Pass. 2nd plural: you (pl) were being loosed")],
     ["3rd", with_tooltip("ἐλύετο", "Imperfect Mid./Pass. 3rd singular: he/she/it was being loosed"), with_tooltip("ἐλύοντο", "Imperfect Mid./Pass. 3rd plural: they were being loosed")]
 ]
-show_two("Imp. Act. Ind.", imperfect_active, "Imp. Mid./Pass. Ind.", imperfect_mp)
+show_two("<span class='note-blue'>Imp. Act. Ind.</span>", imperfect_active, "<span class='note-blue'>Imp. Mid./Pass. Ind.</span>", imperfect_mp)
 
 
 # Future Indicative
@@ -147,7 +148,7 @@ future_passive = [
     ["2nd", with_tooltip("λυθήσῃ", "Future Passive 2nd singular: you will be loosed"), with_tooltip("λυθήσεσθε", "Future Passive 2nd plural: you (pl) will be loosed")],
     ["3rd", with_tooltip("λυθήσεται", "Future Passive 3rd singular: he/she/it will be loosed"), with_tooltip("λυθήσονται", "Future Passive 3rd plural: they will be loosed")]
 ]
-show_three("Fut. Act. Ind.", future_active, "Fut. Mid. Ind.", future_middle, "Fut. Pass. Ind.", future_passive)
+show_three("<span class='note-blue'>Fut. Act. Ind.</span>", future_active, "<span class='note-blue'>Fut. Mid. Ind.</span>", future_middle, "<span class='note-blue'>Fut. Pass. Ind.</span>", future_passive)
 
 
 # Aorist (1st) Indicative
@@ -166,7 +167,7 @@ aorist1_passive = [
     ["2nd", with_tooltip("ἐλύθης", "1st Aorist Passive 2nd singular: you were loosed"), with_tooltip("ἐλύθητε", "1st Aorist Passive 2nd plural: you (pl) were loosed")],
     ["3rd", with_tooltip("ἐλύθη", "1st Aorist Passive 3rd singular: he/she/it was loosed"), with_tooltip("ἐλύθησαν", "1st Aorist Passive 3rd plural: they were loosed")]
 ]
-show_three("Aor. Act. Ind.", aorist1_active, "Aor. Mid. Ind.", aorist1_middle, "Aor. Pass. Ind.", aorist1_passive)
+show_three("<span class='note-blue'>Aor. Act. Ind.</span>", aorist1_active, "<span class='note-blue'>Aor. Mid. Ind.</span>", aorist1_middle, "<span class='note-blue'>Aor. Pass. Ind.</span>", aorist1_passive)
 
 
 # Aorist (2nd) Indicative (different stems!)
@@ -185,7 +186,7 @@ aorist2_passive = [
     ["2nd", with_tooltip("ἐγράφης", "2nd Aorist Passive 2nd singular: you were written"), with_tooltip("ἐγράφητε", "2nd Aorist Passive 2nd plural: you (pl) were written")],
     ["3rd", with_tooltip("ἐγράφη", "2nd Aorist Passive 3rd singular: he/she/it was written"), with_tooltip("ἐγράφησαν", "2nd Aorist Passive 3rd plural: they were written")]
 ]
-show_three("2nd Aor. Act. Ind.", aorist2_active, "2nd Aor. Mid. Ind.", aorist2_middle, "2nd Aor. Pass. Ind.", aorist2_passive)
+show_three("<span class='note-blue'>2nd Aor. Act. Ind.</span>", aorist2_active, "<span class='note-blue'>2nd Aor. Mid. Ind.</span>", aorist2_middle, "<span class='note-blue'>2nd Aor. Pass. Ind.</span>", aorist2_passive)
 
 
 # Perfect Indicative
@@ -201,7 +202,7 @@ perfect_middle = [
 ]
 # Passive is the same as middle
 perfect_passive = perfect_middle
-show_three("Perf. Act. Ind.", perfect_active, "Perf. Mid. Ind.", perfect_middle, "Perf. Pass. Ind.", perfect_passive)
+show_three("<span class='note-blue'>Perf. Act. Ind.</span>", perfect_active, "<span class='note-blue'>Perf. Mid. Ind.</span>", perfect_middle, "<span class='note-blue'>Perf. Pass. Ind.</span>", perfect_passive)
 
 
 # Pluperfect Indicative
@@ -217,4 +218,4 @@ pluperfect_middle = [
 ]
 # Passive is same as middle
 pluperfect_passive = pluperfect_middle
-show_three("Plupf. Act. Ind.", pluperfect_active, "Plupf. Mid. Ind.", pluperfect_middle, "Plupf. Pass. Ind.", pluperfect_passive)
+show_three("<span class='note-blue'>Plupf. Act. Ind.</span>", pluperfect_active, "<span class='note-blue'>Plupf. Mid. Ind.</span>", pluperfect_middle, "<span class='note-blue'>Plupf. Pass. Ind.</span>", pluperfect_passive)
