@@ -40,7 +40,9 @@ st.markdown("""
         }
 
 /* Tooltip & highlight stay the same */
-
+        table {
+            width: 100%;
+        }
         th, td {
             padding: 0.3rem 0.6rem;
             text-align: center;
