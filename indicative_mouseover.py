@@ -17,9 +17,28 @@ st.markdown("""
             max-width: unset;
             padding-left: 15rem;
             padding-right: 15rem;
-            padding-top: 1rem;
+            padding-top: 2rem;
             padding-bottom: 1rem;
+            overflow-x: auto;
         }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .block-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            table {
+                font-size: 0.85rem;   /* smaller font for narrow screens */
+            }
+        }
+
+        /* Scrollable tables */
+        .table-container {
+            overflow-x: auto;
+        }
+
+/* Tooltip & highlight stay the same */
         table {
             width: 100%;
         }
@@ -31,6 +50,8 @@ st.markdown("""
         h1, h2, h3, h4 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
+        }
+
         }
         /* Tooltip styling */
         .tooltip {
