@@ -66,6 +66,8 @@ st.markdown("""
         td:has(.tooltip:hover) {
             background-color: #f5f5a0;
             transition: background-color 0.2s ease-in-out;
+        .note-gold { color: #ffcc00; font-weight: bold; }
+        .note-blue { color: #66ccff; font-weight: bold; } 
         }
     </style>
 """, unsafe_allow_html=True)
