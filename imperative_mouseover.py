@@ -19,7 +19,7 @@ st.markdown("""
             max-width: unset;
             padding-left: 15rem;
             padding-right: 15rem;
-            padding-top: 1rem;
+            padding-top: 2rem;
             padding-bottom: 1rem;
         }
 
@@ -40,7 +40,16 @@ st.markdown("""
         }
 
 /* Tooltip & highlight stay the same */
-    
+
+        th, td {
+            padding: 0.3rem 0.6rem;
+            text-align: center;
+            white-space: nowrap;
+        }
+        h1, h2, h3, h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
 
         /* Tooltip styling */
         .tooltip {
