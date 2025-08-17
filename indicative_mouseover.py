@@ -14,6 +14,7 @@ import pandas as pd
 st.markdown("""
     <style>
         .block-container {
+            use_container_width="auto"
             max-width: unset;
             padding-left: 15rem;
             padding-right: 15rem;
