@@ -21,6 +21,7 @@ st.markdown("""
             padding-right: 15rem;
             padding-top: 2rem;
             padding-bottom: 1rem;
+            overflow-x: auto;
         }
 
         /* Responsive adjustments for mobile */
