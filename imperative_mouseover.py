@@ -114,7 +114,7 @@ present_middle_passive = [
     ["2nd", with_tooltip("λύου", "Pres. Mid./Pass. Imp. 2nd sg: Loose for yourself! / Be loosed!"), with_tooltip("λύεσθε", "Pres. Mid./Pass. Imp. 2nd pl: Loose for yourselves! / Be loosed!")],
     ["3rd", with_tooltip("λυέσθω", "Pres. Mid./Pass. Imp. 3rd sg: Let him/her be loosed!"), with_tooltip("λυέσθωσαν", "Pres. Mid./Pass. Imp. 3rd pl: Let them be loosed!")]
 ]
-show_two("Pres. Act. Imp.", present_active, "Pres. Mid./Pass. Imp.", present_middle_passive)
+show_two("<span class='note-blue'>Pres. Act. Imp.</span>", present_active, "<span class='note-blue'>Pres. Mid./Pass. Imp.</span>", present_middle_passive)
 
 
 # Aorist Imperative
@@ -130,7 +130,7 @@ aorist_passive = [
     ["2nd", with_tooltip("λύθητι", "1st Aor.Pass.Imp. 2nd sg: Be loosed!"), with_tooltip("λύθητε", "1st Aor.Pass.Imp. 2nd pl: Be loosed!")],
     ["3rd", with_tooltip("λυθήτω", "1st Aor.Pass.Imp. 3rd sg: Let him/her be loosed!"), with_tooltip("λυθήτωσαν", "1st Aor.Pass.Imp. 3rd pl: Let them be loosed!")]
 ]
-show_three("Aor. Act. Imp.", aorist_active, "Aor. Mid. Imp.", aorist_middle, "Aor. Pass. Imp.", aorist_passive)
+show_three("<span class='note-blue'>Aor. Act. Imp.</span>", aorist_active, "<span class='note-blue'>Aor. Mid. Imp."</span>, aorist_middle, "<span class='note-blue'>Aor. Pass. Imp.</span>", aorist_passive)
 
 
 # 2nd Aorist Imperative (for λάβω = I take)
@@ -142,4 +142,4 @@ second_aorist_middle = [
     ["2nd", with_tooltip("λαβοῦ", "2nd Aor.Mid.Imp. 2nd sg: Take for yourself!"), with_tooltip("λάβεσθε", "2nd Aor.Mid.Imp. 2nd pl: Take for yourselves!")],
     ["3rd", with_tooltip("λαβέσθω", "2nd Aor.Mid.Imp. 3rd sg: Let him/her take for self!"), with_tooltip("λαβέσθωσαν", "2nd Aor.Mid.Imp. 3rd pl: Let them take for themselves!")]
 ]
-show_two("2nd Aor.Act.Imp.", second_aorist_active, "2nd Aor.Mid./Pass.Imp.", second_aorist_middle)
+show_two("<span class='note-blue'>2nd Aor.Act.Imp.</span>", second_aorist_active, "<span class='note-blue'>2nd Aor.Mid./Pass.Imp.</span>", second_aorist_middle)
