@@ -143,5 +143,6 @@ st.subheader("Perf. Act. Subj.")
 col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     df_perfect_active = pd.DataFrame(perfect_active, columns=["Person", "Singular", "Plural"])
-    st.table(df_perfect_active)
+    st.markdown(df_perfect_active.to_html(escape=False, index=False), unsafe_allow_html=True)
+# col2 and col3 remain empty, so the table only takes up 1/3 width
 
