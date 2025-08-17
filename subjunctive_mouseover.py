@@ -104,7 +104,7 @@ def show_three(title1, data1, title2, data2, title3, data3):
 
 # Present Subjunctive
 present_active = [
-    ["1st", with_tooltip("λύω", "Pres. Act. Subj. 1st Sg — that I may loose"), with_tooltip("λύωμεν", "Pres. Act. Subj. 1st Pl — that we may loose")],
+    ["1st", with_tooltip("λύω", "Pres. Act. Subj. 1st Sg — that I may loose.<br><span class='note-gold'>Also Pres.Act.Ind. 1st sing.</span>"), with_tooltip("λύωμεν", "Pres. Act. Subj. 1st Pl — that we may loose")],
     ["2nd", with_tooltip("λύῃς", "Pres. Act. Subj. 2nd Sg — that you may loose"), with_tooltip("λύητε", "Pres. Act. Subj. 2nd Pl — that you (pl) may loose")],
     ["3rd", with_tooltip("λύῃ", "Pres. Act. Subj. 3rd Sg — that he/she/it may loose"), with_tooltip("λύωσι(ν)", "Pres. Act. Subj. 3rd Pl — that they may loose")]
 ]
