@@ -130,7 +130,7 @@ aorist_passive = [
     ["2nd", with_tooltip("λύθητι", "1st Aor.Pass.Imp. 2nd sg: Be loosed!"), with_tooltip("λύθητε", "1st Aor.Pass.Imp. 2nd pl: Be loosed!")],
     ["3rd", with_tooltip("λυθήτω", "1st Aor.Pass.Imp. 3rd sg: Let him/her be loosed!"), with_tooltip("λυθήτωσαν", "1st Aor.Pass.Imp. 3rd pl: Let them be loosed!")]
 ]
-show_three("<span class='note-blue'>Aor. Act. Imp.</span>", aorist_active, "<span class='note-blue'>Aor. Mid. Imp."</span>, aorist_middle, "<span class='note-blue'>Aor. Pass. Imp.</span>", aorist_passive)
+show_three("<span class='note-blue'>Aor. Act. Imp.</span>", aorist_active, "<span class='note-blue'>Aor. Mid. Imp.</span>", aorist_middle, "<span class='note-blue'>Aor. Pass. Imp.</span>", aorist_passive)
 
 
 # 2nd Aorist Imperative (for λάβω = I take)
