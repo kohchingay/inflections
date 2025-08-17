@@ -112,7 +112,7 @@ present_active = [
 ]
 present_mp = [
     ["1st", with_tooltip("λύομαι", "Present Middle/Passive 1st singular: I loose for myself/am loosed"), with_tooltip("λυόμεθα", "Present Middle/Passive 1st plural: we loose for ourselves/are loosed")],
-    ["2nd", with_tooltip("λύῃ", "Present Middle/Passive 2nd singular: you loose for yourself/are loosed"), with_tooltip("λύεσθε", "Present Middle/Passive 2nd plural: you (pl) are loosed")],
+    ["2nd", with_tooltip("λύῃ", "Present Middle/Passive 2nd singular: you loose for yourself/are loosed.<br><span class='note-gold'>Also Pres.Act.Subj. 3rd sing.</span><br><span class='note-gold'>Also Pres.Mid./Pass.Subj. 2nd sing.</span>"), with_tooltip("λύεσθε", "Present Middle/Passive 2nd plural: you (pl) are loosed")],
     ["3rd", with_tooltip("λύεται", "Present Middle/Passive 3rd singular: he/she/it is loosed"), with_tooltip("λύονται", "Present Middle/Passive 3rd plural: they are loosed")]
 ]
 show_two("<span class='note-blue'>Pres. Act. Ind.</span>", present_active, "<span class='note-blue'>Pres. Mid./Pass. Ind.</span>", present_mp)
