@@ -120,9 +120,9 @@ show_two("<span class='note-blue'>Pres. Act. Ind.</span>", present_active, "<spa
 
 # Imperfect Indicative
 imperfect_active = [
-    ["1st", with_tooltip("ἔλυον", "Imperfect Active 1st singular: I was loosing"), with_tooltip("ἐλύομεν", "Imperfect Active 1st plural: we were loosing")],
+    ["1st", with_tooltip("ἔλυον", "Imperfect Active 1st singular: I was loosing.<br><span class='note-gold'>Also Imp.Act.Ind. 3rd pl</span>"), with_tooltip("ἐλύομεν", "Imperfect Active 1st plural: we were loosing")],
     ["2nd", with_tooltip("ἔλυες", "Imperfect Active 2nd singular: you were loosing"), with_tooltip("ἐλύετε", "Imperfect Active 2nd plural: you (pl) were loosing")],
-    ["3rd", with_tooltip("ἔλυε(ν)", "Imperfect Active 3rd singular: he/she/it was loosing"), with_tooltip("ἔλυον", "Imperfect Active 3rd plural: they were loosing")]
+    ["3rd", with_tooltip("ἔλυε(ν)", "Imperfect Active 3rd singular: he/she/it was loosing"), with_tooltip("ἔλυον", "Imperfect Active 3rd plural: they were loosing.<br><span class='note-gold'>Also Imp.Act.Ind. 1st sing.</span>")]
 ]
 imperfect_mp = [
     ["1st", with_tooltip("ἐλυόμην", "Imperfect Mid./Pass. 1st singular: I was being loosed"), with_tooltip("ἐλυόμεθα", "Imperfect Mid./Pass. 1st plural: we were being loosed")],
