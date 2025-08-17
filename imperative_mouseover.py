@@ -19,20 +19,29 @@ st.markdown("""
             max-width: unset;
             padding-left: 15rem;
             padding-right: 15rem;
-            padding-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
-        table {
-            width: 100%;
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .block-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            table {
+                font-size: 0.85rem;   /* smaller font for narrow screens */
+            }
         }
-        th, td {
-            padding: 0.3rem 0.6rem;
-            text-align: center;
-            white-space: nowrap;
+
+        /* Scrollable tables */
+        .table-container {
+            overflow-x: auto;
         }
-        h1, h2, h3, h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
+
+/* Tooltip & highlight stay the same */
+    
+
         /* Tooltip styling */
         .tooltip {
             position: relative;
