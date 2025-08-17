@@ -19,6 +19,7 @@ st.markdown("""
             max-width: 95%;
             padding-left: 15rem;
             padding-right: 15rem;
+            padding-top: 1rem;
         }
         table {
             width: 100%;
