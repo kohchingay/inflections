@@ -10,6 +10,8 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 
+st.title("Indicative of λύω")
+
 # Inject custom CSS for layout + tooltips
 st.markdown("""
     <style>
@@ -61,7 +63,7 @@ st.markdown("""
         .tooltip .tooltiptext {
             visibility: hidden;
             width: max-content;
-            max-width: 600px;
+            max-width: 250px;
             background-color: #333;
             color: #fff;
             text-align: left;
@@ -69,14 +71,13 @@ st.markdown("""
             padding: 5px;
             position: absolute;
             z-index: 1;
-            bottom: 125%;
+            bottom: 105%;
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
             white-space: normal;        /* allow line wrapping */
             word-wrap: break-word;      /* support long words */
-            white-space: pre-line;   /* interpret \n as line breaks */
         }
         .tooltip:hover .tooltiptext {
             visibility: visible;
@@ -91,8 +92,6 @@ st.markdown("""
         .note-blue { color: #66ccff; font-weight: bold; } 
     </style>
 """, unsafe_allow_html=True)
-
-st.title("Indicative of λύω")
 
 # Tooltip helper
 def with_tooltip(word, note):
