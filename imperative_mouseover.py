@@ -54,6 +54,18 @@ st.markdown("""
             margin-bottom: 0.5rem;
         }
 
+        .table-group {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+            overflow-x: auto;    /* Allow horizontal scroll if too wide */
+            padding-bottom: 0.5rem;
+        }
+        .table-group > div {
+            flex: 0 0 auto;      /* Prevent shrinking */
+        }
+
         /* Tooltip styling */
         .tooltip {
             position: relative;
