@@ -71,7 +71,7 @@ st.markdown("""
             padding: 6px 10px;
             position: absolute;
             z-index: 1;
-            bottom: 95%;
+            bottom: 85%;
             left: 50%;
             transform: translateX(-50%);
             margin-bottom: 2px; /* tiny gap so it "sticks" closer */
