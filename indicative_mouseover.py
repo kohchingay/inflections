@@ -48,6 +48,7 @@ st.markdown("""
             padding: 0.3rem 0.6rem;
             text-align: center;
             white-space: nowrap;
+            position: relative; /* <-- anchor tooltip inside each table cell */
         }
         h1, h2, h3, h4 {
             font-size: 1.1rem;
