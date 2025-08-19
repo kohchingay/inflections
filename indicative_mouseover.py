@@ -74,6 +74,7 @@ st.markdown("""
             bottom: 95%;
             left: 50%;
             transform: translateX(-50%);
+            margin-bottom: 2px; /* tiny gap so it "sticks" closer */
             opacity: 0;
             transition: opacity 0.3s;
             white-space: normal;        /* allow line wrapping */
