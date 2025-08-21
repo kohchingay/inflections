@@ -105,17 +105,17 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Tooltip helper
+def with_tooltip(word, note):
+    return f'<span class="tooltip">{word}<span class="tooltiptext">{note}</span></span>'
 
-# Tooltip builder
-def with_tooltip(word, note_html):
-    return f'<span class="tooltip">{word}<span class="tooltiptext">{note_html}</span></span>'
-
-# Custom table display
+# Custom table renderer (HTML not escaped to allow tooltips)
 def show_table(title, data):
     df = pd.DataFrame(data, columns=["Person", "Singular", "Plural"])
     st.markdown(f"### {title}", unsafe_allow_html=True)
     st.markdown(df.to_html(escape=False, index=False), unsafe_allow_html=True)
 
+# Show two tables side by side
 def show_two(title1, data1, title2, data2):
     col1, col2 = st.columns(2)
     with col1:
@@ -123,6 +123,7 @@ def show_two(title1, data1, title2, data2):
     with col2:
         show_table(title2, data2)
 
+# Show three tables side by side
 def show_three(title1, data1, title2, data2, title3, data3):
     col1, col2, col3 = st.columns(3)
     with col1:
