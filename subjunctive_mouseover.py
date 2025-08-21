@@ -10,9 +10,9 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 
-st.title("Subjunctive of λύω")
+st.title("Imperative of λύω")
 
-# CSS for tooltips and highlighting
+# = CSS styling with tooltip support =
 st.markdown("""
     <style>
         .block-container {
@@ -21,7 +21,26 @@ st.markdown("""
             padding-right: 15rem;
             padding-top: 2rem;
             padding-bottom: 1rem;
+            overflow-x: auto;
         }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .block-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            table {
+                font-size: 0.85rem;   /* smaller font for narrow screens */
+            }
+        }
+
+        /* Scrollable tables */
+        .table-container {
+            overflow-x: auto;
+        }
+
+/* Tooltip & highlight stay the same */
         table {
             width: 100%;
         }
@@ -34,6 +53,19 @@ st.markdown("""
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
+
+        .table-group {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+            overflow-x: auto;    /* Allow horizontal scroll if too wide */
+            padding-bottom: 0.5rem;
+        }
+        .table-group > div {
+            flex: 0 0 auto;      /* Prevent shrinking */
+        }
+
         /* Tooltip styling */
         .tooltip {
             position: relative;
@@ -41,13 +73,13 @@ st.markdown("""
         }
         .tooltip .tooltiptext {
             visibility: hidden;
-            min-width: 300px;
-            max-width: 600px;
+            width: max-content;
+            max-width: 250px;
             background-color: #333;
             color: #fff;
             text-align: left;
-            border-radius: 6px;
-            padding: 8px 12px;
+            border-radius: 5px;
+            padding: 5px;
             position: absolute;
             z-index: 1;
             bottom: 125%;
@@ -55,22 +87,24 @@ st.markdown("""
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
-            white-space: normal;
-            word-wrap: break-word;
+            white-space: normal;        /* allow line wrapping */
+            word-wrap: break-word;      /* support long words */
         }
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
         }
-        /* Highlight TD when tooltip active */
+        /* Highlight the td cell when hovering the tooltip */
         td:has(.tooltip:hover) {
             background-color: #f5f5a0;
             transition: background-color 0.2s ease-in-out;
+        }
+        
         .note-gold { color: #ffcc00; font-weight: bold; }
         .note-blue { color: #66ccff; font-weight: bold; } 
-        }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Tooltip builder
 def with_tooltip(word, note_html):
