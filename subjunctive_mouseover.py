@@ -10,7 +10,7 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 
-st.title("Imperative of λύω")
+st.title("Subjunctive of λύω")
 
 # = CSS styling with tooltip support =
 st.markdown("""
