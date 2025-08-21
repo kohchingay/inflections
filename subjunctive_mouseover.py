@@ -148,7 +148,7 @@ present_mp = [
     ["2nd", with_tooltip("λύῃ", "Pres. Mid./Pass. Subj. 2nd Sg — that you may loose for yourself / may be loosed"), with_tooltip("λύησθε", "Pres. Mid./Pass. Subj. 2nd Pl — that you (pl) may be loosed")],
     ["3rd", with_tooltip("λύηται", "Pres. Mid./Pass. Subj. 3rd Sg — that he/she/it may be loosed"), with_tooltip("λύωνται", "Pres. Mid./Pass. Subj. 3rd Pl — that they may be loosed")]
 ]
-show_two("<span class='note-blue'>Pres. Act. Subj.</span>", present_active, "Pres. Mid./Pass. Subj.", present_mp)
+show_two("<span class='note-blue'>Pres. Act. Subj.</span>", present_active, "<span class='note-blue'>Pres. Mid./Pass. Subj.</span>", present_mp)
 
 # Aorist Subjunctive
 aorist_active = [
@@ -166,7 +166,7 @@ aorist_passive = [
     ["2nd", with_tooltip("λυθῇς", "1st Aor. Pass. Subj. 2nd Sg — that you may be loosed"), with_tooltip("λυθῆτε", "1st Aor. Pass. Subj. 2nd Pl — that you (pl) may be loosed")],
     ["3rd", with_tooltip("λυθῇ", "1st Aor. Pass. Subj. 3rd Sg — that he/she/it may be loosed"), with_tooltip("λυθῶσι(ν)", "1st Aor. Pass. Subj. 3rd Pl — that they may be loosed")]
 ]
-show_three("Aor. Act. Subj.", aorist_active, "Aor. Mid. Subj.", aorist_middle, "Aor. Pass. Subj.", aorist_passive)
+show_three("<span class='note-blue'>Aor. Act. Subj.</span>", aorist_active, "<span class='note-blue'>Aor. Mid. Subj.</span>", aorist_middle, "<span class='note-blue'>Aor. Pass. Subj.</span>", aorist_passive)
 
 # Perfect Subjunctive (only Active generally attested)
 perfect_active = [
@@ -174,7 +174,7 @@ perfect_active = [
     ["2nd", with_tooltip("λελύκῃς", "Perf. Act. Subj. 2nd Sg — that you may have loosed"), with_tooltip("λελύκητε", "Perf. Act. Subj. 2nd Pl — that you (pl) may have loosed")],
     ["3rd", with_tooltip("λελύκῃ", "Perf. Act. Subj. 3rd Sg — that he/she/it may have loosed"), with_tooltip("λελύκωσι(ν)", "Perf. Act. Subj. 3rd Pl — that they may have loosed")]
 ]
-st.subheader("Perf. Act. Subj.")
+st.subheader("<span class='note-blue'>Perf. Act. Subj.</span>")
 col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     df_perfect_active = pd.DataFrame(perfect_active, columns=["Person", "Singular", "Plural"])
