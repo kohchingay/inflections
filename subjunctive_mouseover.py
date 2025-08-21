@@ -146,7 +146,7 @@ present_active = [
 ]
 present_mp = [
     ["1st", with_tooltip("λύωμαι", "Pres. Mid./Pass. Subj. 1st Sg — that I may loose for myself / may be loosed"), with_tooltip("λυώμεθα", "Pres. Mid./Pass. Subj. 1st Pl — that we may loose for ourselves / may be loosed")],
-    ["2nd", with_tooltip("λύῃ", "Pres. Mid./Pass. Subj. 2nd Sg — that you may loose for yourself / may be loosed.<br><span class='note-gold'>Also Pres. Mid./Pass. Ind. 2nd sing.</span>"), with_tooltip("λύησθε", "Pres. Mid./Pass. Subj. 2nd Pl — that you (pl) may be loosed")],
+    ["2nd", with_tooltip("λύῃ", "Pres. Mid./Pass. Subj. 2nd Sg — that you may loose for yourself / may be loosed.<br><span class='note-gold'>Also Pres. Mid./Pass. Ind. 2nd sing.</span><br><span class='note-gold'>Also Pres. Act. Subj. 3rd sing.</span>"), with_tooltip("λύησθε", "Pres. Mid./Pass. Subj. 2nd Pl — that you (pl) may be loosed")],
     ["3rd", with_tooltip("λύηται", "Pres. Mid./Pass. Subj. 3rd Sg — that he/she/it may be loosed"), with_tooltip("λύωνται", "Pres. Mid./Pass. Subj. 3rd Pl — that they may be loosed")]
 ]
 show_two("<span class='note-blue'>Pres. Act. Subj.</span>", present_active, "<span class='note-blue'>Pres. Mid./Pass. Subj.</span>", present_mp)
