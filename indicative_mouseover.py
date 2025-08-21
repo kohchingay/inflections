@@ -64,7 +64,7 @@ st.markdown("""
         .tooltip .tooltiptext {
             visibility: hidden;
             width: max-content;
-            max-width: 250px;
+            max-width: unset;
             background-color: #333;
             color: #fff;
             text-align: left;
