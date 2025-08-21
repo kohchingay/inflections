@@ -82,7 +82,7 @@ st.markdown("""
             padding: 5px;
             position: absolute;
             z-index: 1;
-            bottom: 125%;
+            bottom: 150%;
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
