@@ -174,7 +174,7 @@ perfect_active = [
     ["2nd", with_tooltip("λελύκῃς", "Perf. Act. Subj. 2nd Sg — that you may have loosed"), with_tooltip("λελύκητε", "Perf. Act. Subj. 2nd Pl — that you (pl) may have loosed")],
     ["3rd", with_tooltip("λελύκῃ", "Perf. Act. Subj. 3rd Sg — that he/she/it may have loosed"), with_tooltip("λελύκωσι(ν)", "Perf. Act. Subj. 3rd Pl — that they may have loosed")]
 ]
-st.subheader("<span class='note-blue'>Perf. Act. Subj.</span>")
+st.subheader("Perf. Act. Subj.")
 col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     df_perfect_active = pd.DataFrame(perfect_active, columns=["Person", "Singular", "Plural"])
