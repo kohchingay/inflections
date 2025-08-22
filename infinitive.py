@@ -78,7 +78,7 @@ table_html = """
     <tr>
         <td>Act.</td>
         <td><span class="tooltip">λύειν<span class="tooltiptext">Present Active Infinitive</span></span></td>
-        <td><span class="tooltip">λῦσαι<span class="tooltiptext">Aorist Active Infinitive</span></span></td>
+        <td><span class="tooltip">λῦσαι<span class="tooltiptext">Aorist Active Infinitive<br><span class='note-gold'>Also Aor.Mid.Imp. 2nd sing.</span></span></span></td>
         <td><span class="tooltip">λελυκέναι<span class="tooltiptext">Perfect Active Infinitive</span></span></td>
     </tr>
     <tr>
