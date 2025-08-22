@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Infinitive Mood of λύω")
+st.title("Imperative Mood of λύω")
 
 # = CSS styling =
 st.markdown("""
@@ -47,28 +47,27 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# = Tooltip-enhanced data =
-infinitive_data = {
+# = Tooltip-enhanced imperative data =
+imperative_data = {
     "Present": {
-        "Act.": '<span title="Present Active Infinitive">λύειν</span>',
-        "Mid.": '<span title="Present Middle Infinitive">λύεσθαι</span>',
-        "Pass.": '<span title="Present Passive Infinitive">λύεσθαι</span>'
+        "Act. 2nd": '<span title="Present Active Imperative, 2nd Person">λύε</span>',
+        "Act. 3rd": '<span title="Present Active Imperative, 3rd Person">λυέτω</span>',
+        "Mid./Pass. 2nd": '<span title="Present Middle/Passive Imperative, 2nd Person">λύου</span>',
+        "Mid./Pass. 3rd": '<span title="Present Middle/Passive Imperative, 3rd Person">λυέσθω</span>'
     },
     "Aorist": {
-        "Act.": '<span title="Aorist Active Infinitive">λῦσαι</span>',
-        "Mid.": '<span title="Aorist Middle Infinitive">λύσασθαι</span>',
-        "Pass.": '<span title="Aorist Passive Infinitive">λυθῆναι</span>'
-    },
-    "Perfect": {
-        "Act.": '<span title="Perfect Active Infinitive">λελυκέναι</span>',
-        "Mid.": '<span title="Perfect Middle Infinitive">λελύσθαι</span>',
-        "Pass.": '<span title="Perfect Passive Infinitive">λελύσθαι</span>'
+        "Act. 2nd": '<span title="Aorist Active Imperative, 2nd Person">λῦσον</span>',
+        "Act. 3rd": '<span title="Aorist Active Imperative, 3rd Person">λυσάτω</span>',
+        "Mid. 2nd": '<span title="Aorist Middle Imperative, 2nd Person">λύσαι</span>',
+        "Mid. 3rd": '<span title="Aorist Middle Imperative, 3rd Person">λυσάσθω</span>',
+        "Pass. 2nd": '<span title="Aorist Passive Imperative, 2nd Person">λύθητι</span>',
+        "Pass. 3rd": '<span title="Aorist Passive Imperative, 3rd Person">λυθήτω</span>'
     }
 }
 
 # Convert to DataFrame
-df = pd.DataFrame(infinitive_data)
+df = pd.DataFrame(imperative_data)
 
 # Display table with tooltips
-st.markdown("### Infinitive Forms of λύω (with Tense & Voice Tooltips)")
+st.markdown("### Imperative Forms of λύω (with Tense, Voice & Person Tooltips)")
 st.markdown(df.to_html(escape=False), unsafe_allow_html=True)
