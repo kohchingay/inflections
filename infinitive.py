@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1sBAgZzJvlSsnGBpkqdBt9bLuOSXqEl6R
 """
 
-mport streamlit as st
+import streamlit as st
 import pandas as pd
 
 st.title("Infinitive Forms of λύω")
