@@ -162,7 +162,7 @@ future_active = [
 ]
 future_middle = [
     ["1st", with_tooltip("λύσομαι", "Future Middle 1st singular: I will loose for myself"), with_tooltip("λυσόμεθα", "Future Middle 1st plural: we will loose for ourselves")],
-    ["2nd", with_tooltip("λύσῃ", "Future Middle 2nd singular: you will loose for yourself. <br><span class='note-gold'>Also Aor.Act.Subj. 3rd sing.</span>"), with_tooltip("λύσεσθε", "Future Middle 2nd plural: you (pl) will loose for yourselves")],
+    ["2nd", with_tooltip("λύσῃ", "Future Middle 2nd singular: you will loose for yourself. <br><span class='note-gold'>Also Aor.Act.Subj. 3rd sing.</span><br><span class='note-gold'>Also Aor.Mid.Subj. 2nd sing.</span>"), with_tooltip("λύσεσθε", "Future Middle 2nd plural: you (pl) will loose for yourselves")],
     ["3rd", with_tooltip("λύσεται", "Future Middle 3rd singular: he/she/it will loose for itself"), with_tooltip("λύσονται", "Future Middle 3rd plural: they will loose for themselves")]
 ]
 future_passive = [
