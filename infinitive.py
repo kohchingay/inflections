@@ -60,6 +60,8 @@ st.markdown("""
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
+        .note-gold { color: #ffcc00; font-weight: bold; }
+        .note-blue { color: #66ccff; font-weight: bold; } 
         }
     </style>
 """, unsafe_allow_html=True)
