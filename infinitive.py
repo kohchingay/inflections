@@ -49,7 +49,7 @@ st.markdown("""
             padding: 4px 8px;
             position: absolute;
             z-index: 1;
-            bottom: 125%; /* Position above */
+            bottom: 200%; /* Position above */
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
