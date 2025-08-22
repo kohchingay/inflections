@@ -7,8 +7,8 @@ st.markdown("""
     <style>
         .block-container {
             max-width: unset;
-            padding-left: 15rem;
-            padding-right: 15rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
             padding-top: 2rem;
             padding-bottom: 1rem;
             overflow-x: auto;
@@ -95,5 +95,5 @@ table_html = """
 """
 
 # Display table
-st.markdown("### Infinitive Forms of λύω (with Reliable Tooltips)")
+st.markdown("### Infinitive Forms of λύω")
 st.markdown(table_html, unsafe_allow_html=True)
