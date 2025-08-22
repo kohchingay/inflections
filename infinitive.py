@@ -1,7 +1,6 @@
 import streamlit as st
-import pandas as pd
 
-st.title("Imperative Mood of λύω")
+st.title("Infinitive Mood of λύω")
 
 # = CSS styling =
 st.markdown("""
@@ -26,7 +25,6 @@ st.markdown("""
         }
 
         table {
-            width: auto;
             margin: auto;
             border-collapse: collapse;
         }
@@ -40,34 +38,42 @@ st.markdown("""
             font-weight: bold;
             border-bottom: 2px solid #666;
         }
-        h1, h2, h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+        td:first-child {
+            font-weight: bold;
         }
     </style>
 """, unsafe_allow_html=True)
 
-# = Tooltip-enhanced imperative data =
-imperative_data = {
-    "Present": {
-        "Act. 2nd": '<span title="Present Active Imperative, 2nd Person">λύε</span>',
-        "Act. 3rd": '<span title="Present Active Imperative, 3rd Person">λυέτω</span>',
-        "Mid./Pass. 2nd": '<span title="Present Middle/Passive Imperative, 2nd Person">λύου</span>',
-        "Mid./Pass. 3rd": '<span title="Present Middle/Passive Imperative, 3rd Person">λυέσθω</span>'
-    },
-    "Aorist": {
-        "Act. 2nd": '<span title="Aorist Active Imperative, 2nd Person">λῦσον</span>',
-        "Act. 3rd": '<span title="Aorist Active Imperative, 3rd Person">λυσάτω</span>',
-        "Mid. 2nd": '<span title="Aorist Middle Imperative, 2nd Person">λύσαι</span>',
-        "Mid. 3rd": '<span title="Aorist Middle Imperative, 3rd Person">λυσάσθω</span>',
-        "Pass. 2nd": '<span title="Aorist Passive Imperative, 2nd Person">λύθητι</span>',
-        "Pass. 3rd": '<span title="Aorist Passive Imperative, 3rd Person">λυθήτω</span>'
-    }
-}
+# = Tooltip-enhanced HTML table =
+table_html = """
+<table>
+    <tr>
+        <th></th>
+        <th>Present</th>
+        <th>Aorist</th>
+        <th>Perfect</th>
+    </tr>
+    <tr>
+        <td>Act.</td>
+        <td><span title="Present Active Infinitive">λύειν</span></td>
+        <td><span title="Aorist Active Infinitive">λῦσαι</span></td>
+        <td><span title="Perfect Active Infinitive">λελυκέναι</span></td>
+    </tr>
+    <tr>
+        <td>Mid.</td>
+        <td><span title="Present Middle Infinitive">λύεσθαι</span></td>
+        <td><span title="Aorist Middle Infinitive">λύσασθαι</span></td>
+        <td><span title="Perfect Middle Infinitive">λελύσθαι</span></td>
+    </tr>
+    <tr>
+        <td>Pass.</td>
+        <td><span title="Present Passive Infinitive">λύεσθαι</span></td>
+        <td><span title="Aorist Passive Infinitive">λυθῆναι</span></td>
+        <td><span title="Perfect Passive Infinitive">λελύσθαι</span></td>
+    </tr>
+</table>
+"""
 
-# Convert to DataFrame
-df = pd.DataFrame(imperative_data)
-
-# Display table with tooltips
-st.markdown("### Imperative Forms of λύω (with Tense, Voice & Person Tooltips)")
-st.markdown(df.to_html(escape=False), unsafe_allow_html=True)
+# Display table
+st.markdown("### Infinitive Forms of λύω (with Hover Tooltips)")
+st.markdown(table_html, unsafe_allow_html=True)
