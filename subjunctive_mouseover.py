@@ -153,13 +153,13 @@ show_two("<span class='note-blue'>Pres. Act. Subj.</span>", present_active, "<sp
 
 # Aorist Subjunctive
 aorist_active = [
-    ["1st", with_tooltip("λύσω", "1st Aor. Act. Subj. 1st Sg — that I may loose (point-in-time)"), with_tooltip("λύσωμεν", "1st Aor. Act. Subj. 1st Pl — that we may loose")],
+    ["1st", with_tooltip("λύσω", "1st Aor. Act. Subj. 1st Sg — that I may loose (point-in-time). <br><span class='note-gold'>Also Fut.Act.Ind. 1st sing.</span>"), with_tooltip("λύσωμεν", "1st Aor. Act. Subj. 1st Pl — that we may loose")],
     ["2nd", with_tooltip("λύσῃς", "1st Aor. Act. Subj. 2nd Sg — that you may loose"), with_tooltip("λύσητε", "1st Aor. Act. Subj. 2nd Pl — that you (pl) may loose")],
-    ["3rd", with_tooltip("λύσῃ", "1st Aor. Act. Subj. 3rd Sg — that he/she/it may loose"), with_tooltip("λύσωσι(ν)", "1st Aor. Act. Subj. 3rd Pl — that they may loose")]
+    ["3rd", with_tooltip("λύσῃ", "1st Aor. Act. Subj. 3rd Sg — that he/she/it may loose.<br><span class='note-gold'>Also Fut.Mid.Ind. 2nd sing.</span><br><span class='note-gold'>Also Aor. Mid. Subj. 2nd sing.</span>"), with_tooltip("λύσωσι(ν)", "1st Aor. Act. Subj. 3rd Pl — that they may loose")]
 ]
 aorist_middle = [
     ["1st", with_tooltip("λύσωμαι", "1st Aor. Mid. Subj. 1st Sg — that I may loose for myself"), with_tooltip("λυσώμεθα", "1st Aor. Mid. Subj. 1st Pl — that we may loose for ourselves")],
-    ["2nd", with_tooltip("λύσῃ", "1st Aor. Mid. Subj. 2nd Sg — that you may loose for yourself"), with_tooltip("λύσησθε", "1st Aor. Mid. Subj. 2nd Pl — that you (pl) may loose for yourselves")],
+    ["2nd", with_tooltip("λύσῃ", "1st Aor. Mid. Subj. 2nd Sg — that you may loose for yourself.<br><span class='note-gold'>Also Fut.Mid.Ind. 2nd sing.</span><br><span class='note-gold'>Also Aor. Act. Subj. 3rd sing.</span>"), with_tooltip("λύσησθε", "1st Aor. Mid. Subj. 2nd Pl — that you (pl) may loose for yourselves")],
     ["3rd", with_tooltip("λύσηται", "1st Aor. Mid. Subj. 3rd Sg — that he/she may loose for self"), with_tooltip("λύσωνται", "1st Aor. Mid. Subj. 3rd Pl — that they may loose for themselves")]
 ]
 aorist_passive = [
