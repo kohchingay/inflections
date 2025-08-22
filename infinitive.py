@@ -96,4 +96,4 @@ table_html = """
 
 # Display table
 st.markdown("### Infinitive Forms of λύω (with Reliable Tooltips)")
-st.markdown(table_html, unsafe_allow_html=True
+st.markdown(table_html, unsafe_allow_html=True)
