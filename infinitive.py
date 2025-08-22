@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Infinitive Mood of λύω")
 
-# = CSS styling =
+# = CSS styling with custom tooltip =
 st.markdown("""
     <style>
         .block-container {
@@ -12,16 +12,6 @@ st.markdown("""
             padding-top: 2rem;
             padding-bottom: 1rem;
             overflow-x: auto;
-        }
-
-        @media (max-width: 768px) {
-            .block-container {
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-            }
-            table {
-                font-size: 0.85rem;
-            }
         }
 
         table {
@@ -41,10 +31,40 @@ st.markdown("""
         td:first-child {
             font-weight: bold;
         }
+
+        /* Tooltip styling */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: max-content;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 4px 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 """, unsafe_allow_html=True)
 
-# = Tooltip-enhanced HTML table =
+# = HTML table with CSS tooltips =
 table_html = """
 <table>
     <tr>
@@ -55,25 +75,25 @@ table_html = """
     </tr>
     <tr>
         <td>Act.</td>
-        <td><span title="Present Active Infinitive">λύειν</span></td>
-        <td><span title="Aorist Active Infinitive">λῦσαι</span></td>
-        <td><span title="Perfect Active Infinitive">λελυκέναι</span></td>
+        <td><span class="tooltip">λύειν<span class="tooltiptext">Present Active Infinitive</span></span></td>
+        <td><span class="tooltip">λῦσαι<span class="tooltiptext">Aorist Active Infinitive</span></span></td>
+        <td><span class="tooltip">λελυκέναι<span class="tooltiptext">Perfect Active Infinitive</span></span></td>
     </tr>
     <tr>
         <td>Mid.</td>
-        <td><span title="Present Middle Infinitive">λύεσθαι</span></td>
-        <td><span title="Aorist Middle Infinitive">λύσασθαι</span></td>
-        <td><span title="Perfect Middle Infinitive">λελύσθαι</span></td>
+        <td><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Middle Infinitive</span></span></td>
+        <td><span class="tooltip">λύσασθαι<span class="tooltiptext">Aorist Middle Infinitive</span></span></td>
+        <td><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Middle Infinitive</span></span></td>
     </tr>
     <tr>
         <td>Pass.</td>
-        <td><span title="Present Passive Infinitive">λύεσθαι</span></td>
-        <td><span title="Aorist Passive Infinitive">λυθῆναι</span></td>
-        <td><span title="Perfect Passive Infinitive">λελύσθαι</span></td>
+        <td><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Passive Infinitive</span></span></td>
+        <td><span class="tooltip">λυθῆναι<span class="tooltiptext">Aorist Passive Infinitive</span></span></td>
+        <td><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Passive Infinitive</span></span></td>
     </tr>
 </table>
 """
 
 # Display table
-st.markdown("### Infinitive Forms of λύω (with Hover Tooltips)")
-st.markdown(table_html, unsafe_allow_html=True)
+st.markdown("### Infinitive Forms of λύω (with Reliable Tooltips)")
+st.markdown(table_html, unsafe_allow_html=True
