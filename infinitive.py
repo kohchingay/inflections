@@ -78,7 +78,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # = HTML table with CSS tooltips =
-able_html = """
+table_html = """
 <table>
     <tr>
         <th></th>
