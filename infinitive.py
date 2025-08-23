@@ -1,8 +1,8 @@
 import streamlit as st
 
-# st.title("Infinitive Mood of λύω")
+st.title("Infinitive Mood of λύω")
 
-st.markdown("<h1 style='color:#1f77b4;'>Infinitive Mood of λύω</h1>", unsafe_allow_html=True)
+# st.markdown("<h1 style='color:#1f77b4;'>Infinitive Mood of λύω</h1>", unsafe_allow_html=True)
 
 # = CSS styling with custom tooltip =
 st.markdown("""
@@ -73,9 +73,9 @@ table_html = """
 <table>
     <tr>
         <th></th>
-        <th>Present</th>
-        <th>Aorist</th>
-        <th>Perfect</th>
+        <th><span class='note-blue'>Present</span></th>
+        <th><span class='note-blue'>Aorist</span></th>
+        <th><span class='note-blue'>Perfect</span></th>
     </tr>
     <tr>
         <td>Act.</td>
