@@ -97,5 +97,5 @@ table_html = """
 """
 
 # Display table
-st.markdown('<div style="text-align: center;"><span class="note-blue"><h3>Infinitive Forms of λύω</h3></span></div>', unsafe_allow_html=True)
+# st.markdown('<div style="text-align: center;"><h3>Infinitive Forms of λύω</h3></div>', unsafe_allow_html=True)
 st.markdown(table_html, unsafe_allow_html=True)
