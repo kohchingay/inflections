@@ -87,19 +87,19 @@ table_html = """
         <th><span class='note-blue'>Perfect</span></th>
     </tr>
     <tr>
-        <td>Act.</td>
+        <td><span class='note-blue'>Act.</span></td>
         <td><span class="tooltip">λύειν<span class="tooltiptext">Present Active Infinitive</span></span></td>
         <td><span class="tooltip">λῦσαι<span class="tooltiptext">Aorist Active Infinitive<br><span class='note-gold'>Also Aor.Mid.Imp. 2nd sing.</span></span></span></td>
         <td><span class="tooltip">λελυκέναι<span class="tooltiptext">Perfect Active Infinitive</span></span></td>
     </tr>
     <tr>
-        <td>Mid.</td>
+        <td><span class='note-blue'>Mid.</span></td>
         <td><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Middle Infinitive</span></span></td>
         <td><span class="tooltip">λύσασθαι<span class="tooltiptext">Aorist Middle Infinitive</span></span></td>
         <td><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Middle Infinitive</span></span></td>
     </tr>
     <tr>
-        <td>Pass.</td>
+        <td><span class='note-blue'>Pass.</span></td>
         <td><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Passive Infinitive</span></span></td>
         <td><span class="tooltip">λυθῆναι<span class="tooltiptext">Aorist Passive Infinitive</span></span></td>
         <td><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Passive Infinitive</span></span></td>
