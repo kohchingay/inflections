@@ -1,6 +1,8 @@
 import streamlit as st
 
-st.title("Infinitive Mood of λύω")
+# st.title("Infinitive Mood of λύω")
+
+st.markdown("<h1 style='color:#1f77b4;'>Infinitive Mood of λύω</h1>", unsafe_allow_html=True)
 
 # = CSS styling with custom tooltip =
 st.markdown("""
