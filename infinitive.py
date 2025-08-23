@@ -7,6 +7,15 @@ st.title("Infinitive Mood of λύω")
 # = CSS styling with custom tooltip =
 st.markdown("""
     <style>
+        .note-blue {
+            color: #66ccff;  /* Or any color you prefer */
+            font-weight: bold;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
         .block-container {
             max-width: unset;
             padding-left: 4rem;
