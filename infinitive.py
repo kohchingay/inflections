@@ -78,31 +78,29 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # = HTML table with CSS tooltips =
-table_html = """
+able_html = """
 <table>
     <tr>
         <th></th>
-        <th><span class='note-blue'>Present</span></th>
-        <th><span class='note-blue'>Aorist</span></th>
-        <th><span class='note-blue'>Perfect</span></th>
+        <th><span class='note-blue'>Active</span></th>
+        <th><span class='note-blue'>Middle</span></th>
+        <th><span class='note-blue'>Passive</span></th>
     </tr>
     <tr>
-        <td><span class='note-blue'>Act.</span></td>
+        <td><span class='note-blue'>Present</span></td>
         <td><span class="tooltip">λύειν<span class="tooltiptext">Present Active Infinitive</span></span></td>
+        <td colspan="2"><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Middle & Passive Infinitive</span></span></td>
+    </tr>
+    <tr>
+        <td><span class='note-blue'>Aorist</span></td>
         <td><span class="tooltip">λῦσαι<span class="tooltiptext">Aorist Active Infinitive<br><span class='note-gold'>Also Aor.Mid.Imp. 2nd sing.</span></span></span></td>
-        <td><span class="tooltip">λελυκέναι<span class="tooltiptext">Perfect Active Infinitive</span></span></td>
-    </tr>
-    <tr>
-        <td><span class='note-blue'>Mid.</span></td>
-        <td><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Middle Infinitive</span></span></td>
         <td><span class="tooltip">λύσασθαι<span class="tooltiptext">Aorist Middle Infinitive</span></span></td>
-        <td><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Middle Infinitive</span></span></td>
+        <td><span class="tooltip">λυθῆναι<span class="tooltiptext">Aorist Passive Infinitive</span></span></td>
     </tr>
     <tr>
-        <td><span class='note-blue'>Pass.</span></td>
-        <td><span class="tooltip">λύεσθαι<span class="tooltiptext">Present Passive Infinitive</span></span></td>
-        <td><span class="tooltip">λυθῆναι<span class="tooltiptext">Aorist Passive Infinitive</span></span></td>
-        <td><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Passive Infinitive</span></span></td>
+        <td><span class='note-blue'>Perfect</span></td>
+        <td><span class="tooltip">λελυκέναι<span class="tooltiptext">Perfect Active Infinitive</span></span></td>
+        <td colspan="2"><span class="tooltip">λελύσθαι<span class="tooltiptext">Perfect Middle & Passive Infinitive</span></span></td>
     </tr>
 </table>
 """
